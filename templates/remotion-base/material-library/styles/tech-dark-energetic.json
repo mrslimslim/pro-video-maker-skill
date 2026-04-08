@@ -1,0 +1,39 @@
+{
+  "id": "tech-dark-energetic",
+  "name": "科技暗色活力风",
+  "description": "High-contrast dark theme with indigo/cyan accents and fast kinetic typography. Best for tech, SaaS, developer, and AI content on social platforms.",
+  "palette": {
+    "primary": "#6366F1",
+    "secondary": "#818CF8",
+    "accent": "#22D3EE",
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "text": "#F8FAFC",
+    "textSecondary": "#94A3B8"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 700, "subtitle": 600, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 64, "subtitle": 40, "body": 28, "caption": 20 }
+  },
+  "motion": {
+    "style": "kinetic-typography",
+    "easing": "power2.out",
+    "stagger": 0.04,
+    "intensity": "high",
+    "duration": "fast",
+    "rhythm": "upbeat"
+  },
+  "contextMatch": {
+    "mood": ["energetic", "modern", "professional"],
+    "industry": ["tech", "saas", "developer", "ai", "startup"],
+    "platform": ["douyin", "tiktok", "reels", "youtube"]
+  },
+  "sourceRefs": {
+    "paletteId": "tech-dark",
+    "typographyId": "modern-sans",
+    "motionStyleId": "kinetic-typography"
+  }
+}

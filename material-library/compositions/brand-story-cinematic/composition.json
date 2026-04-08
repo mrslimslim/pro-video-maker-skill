@@ -1,0 +1,73 @@
+{
+  "id": "brand-story-cinematic",
+  "style": "brand-warm-cinematic",
+  "sequence": [
+    {
+      "block": "logo-reveal-draw",
+      "role": "opening",
+      "durationFrames": 90,
+      "props": {
+        "svgPath": "{{logoPath}}",
+        "label": "{{brandName}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "content-timeline-vertical",
+      "role": "story",
+      "durationFrames": 180,
+      "props": {
+        "title": "{{timelineTitle}}",
+        "items": "{{milestones}}"
+      },
+      "transition": "dissolve"
+    },
+    {
+      "block": "image-showcase-gsap",
+      "role": "hero-image",
+      "durationFrames": 120,
+      "props": {
+        "imageSrc": "{{heroImage}}",
+        "headline": "{{heroHeadline}}",
+        "subtitle": "{{heroSubtitle}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "quote-fade",
+      "role": "quote",
+      "durationFrames": 120,
+      "props": {
+        "quote": "{{quoteText}}",
+        "attribution": "{{quoteAuthor}}"
+      },
+      "transition": "dissolve"
+    },
+    {
+      "block": "cta-glow-pulse",
+      "role": "closing",
+      "durationFrames": 90,
+      "props": {
+        "headline": "{{ctaHeadline}}",
+        "subtext": "{{ctaSubtext}}",
+        "buttonText": "{{ctaButton}}"
+      },
+      "transition": "fade"
+    }
+  ],
+  "variables": {
+    "logoPath": { "type": "string", "description": "SVG path d attribute for logo drawing" },
+    "brandName": { "type": "string", "description": "Brand name displayed after logo reveal" },
+    "timelineTitle": { "type": "string", "description": "Title for the milestone timeline", "default": "Our Journey" },
+    "milestones": { "type": "array", "description": "Array of {label, description} milestone entries" },
+    "heroImage": { "type": "string", "description": "URL or staticFile path for hero image" },
+    "heroHeadline": { "type": "string", "description": "Text overlay on hero image" },
+    "heroSubtitle": { "type": "string", "default": null },
+    "quoteText": { "type": "string", "description": "Inspirational quote or brand mission" },
+    "quoteAuthor": { "type": "string", "description": "Quote attribution" },
+    "ctaHeadline": { "type": "string", "default": "Join Our Story" },
+    "ctaSubtext": { "type": "string", "default": null },
+    "ctaButton": { "type": "string", "default": "Learn More" }
+  },
+  "notes": "Cinematic brand story template with warm, emotional pacing. Logo → timeline → hero visual → quote → CTA. ~90s total at 30fps = 2700 frames."
+}

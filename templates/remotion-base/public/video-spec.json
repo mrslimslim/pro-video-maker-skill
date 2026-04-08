@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "video": {
+    "title": "5 Python Tips",
+    "platform": "tiktok",
+    "style": "tech-dark-energetic"
+  },
+  "styleOverrides": {
+    "palette": {
+      "accent": "#22D3EE"
+    }
+  },
+  "scenes": [
+    {
+      "block": "title-kinetic-gsap",
+      "duration": "3s",
+      "props": {
+        "title": "5 Python Tips",
+        "subtitle": "Write cleaner code in less time"
+      },
+      "transition": "slide-up",
+      "background": {
+        "type": "starfield",
+        "props": {
+          "count": 72
+        }
+      }
+    },
+    {
+      "block": "content-bullet-stagger",
+      "duration": "4s",
+      "repeat": "${{ data.tips.length }}",
+      "propsTemplate": {
+        "heading": "${{ item.title }}",
+        "bulletPoints": "${{ item.points }}",
+        "layout": "left-aligned"
+      },
+      "transition": {
+        "type": "slide-up",
+        "pacing": "fast"
+      },
+      "effects": [
+        {
+          "type": "sparkle",
+          "props": {
+            "count": 10
+          }
+        }
+      ]
+    },
+    {
+      "block": "cta-glow-pulse",
+      "duration": "3s",
+      "props": {
+        "headline": "Follow for more!",
+        "subtext": "More coding tips and video automation workflows every week.",
+        "buttonText": "Save this"
+      },
+      "transition": "fade",
+      "effects": [
+        {
+          "type": "light-sweep",
+          "props": {
+            "repeat": true,
+            "repeatInterval": 50
+          }
+        }
+      ]
+    }
+  ],
+  "data": {
+    "tips": [
+      {
+        "title": "Use List Comprehensions",
+        "points": [
+          "Cleaner loops",
+          "Fewer temporary variables"
+        ]
+      },
+      {
+        "title": "Prefer F-Strings",
+        "points": [
+          "Readable formatting",
+          "Less boilerplate"
+        ]
+      },
+      {
+        "title": "Lean on Enumerate",
+        "points": [
+          "Index plus value",
+          "Avoid manual counters"
+        ]
+      }
+    ]
+  },
+  "subtitles": {
+    "enabled": true,
+    "position": "bottom-center",
+    "style": "box",
+    "entries": [
+      {
+        "text": "Here are 5 Python tips to write cleaner code.",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "text": "First, use list comprehensions for cleaner loops.",
+        "start": 3,
+        "end": 7
+      },
+      {
+        "text": "Second, prefer f-strings for readable formatting.",
+        "start": 7,
+        "end": 11
+      },
+      {
+        "text": "Third, use enumerate instead of manual counters.",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "text": "Follow for more practical coding tips.",
+        "start": 15,
+        "end": 18
+      }
+    ]
+  }
+}

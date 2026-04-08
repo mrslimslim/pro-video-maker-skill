@@ -1,0 +1,72 @@
+{
+  "id": "product-launch-showcase",
+  "style": "tech-dark-energetic",
+  "sequence": [
+    {
+      "block": "title-gradient-sweep",
+      "role": "hero",
+      "durationFrames": 90,
+      "props": {
+        "title": "{{productName}}",
+        "subtitle": "{{tagline}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "feature-grid-icon",
+      "role": "features",
+      "repeat": "{{featureSectionCount}}",
+      "durationFrames": 150,
+      "props": {
+        "title": "{{featureSections[i].title}}",
+        "features": "{{featureSections[i].features}}",
+        "columns": 2
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "stats-counter-row",
+      "role": "metrics",
+      "durationFrames": 120,
+      "props": {
+        "stats": "{{stats}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "testimonial-quote-card",
+      "role": "social-proof",
+      "durationFrames": 120,
+      "props": {
+        "quote": "{{testimonial.quote}}",
+        "author": "{{testimonial.author}}",
+        "role": "{{testimonial.role}}",
+        "rating": "{{testimonial.rating}}"
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "cta-glow-pulse",
+      "role": "closing",
+      "durationFrames": 90,
+      "props": {
+        "headline": "{{ctaHeadline}}",
+        "subtext": "{{ctaSubtext}}",
+        "buttonText": "{{ctaButton}}"
+      },
+      "transition": "fade"
+    }
+  ],
+  "variables": {
+    "productName": { "type": "string", "description": "Product or brand name for the hero title" },
+    "tagline": { "type": "string", "description": "Product tagline or subtitle" },
+    "featureSectionCount": { "type": "number", "description": "Number of feature grid sections", "default": 2 },
+    "featureSections": { "type": "array", "description": "Array of {title, features: [{icon, title, description}]}" },
+    "stats": { "type": "array", "description": "Array of {value, label, prefix?, suffix?} for metrics" },
+    "testimonial": { "type": "object", "description": "{quote, author, role, rating}" },
+    "ctaHeadline": { "type": "string", "default": "Get Started Today" },
+    "ctaSubtext": { "type": "string", "default": null },
+    "ctaButton": { "type": "string", "default": "Try Free" }
+  },
+  "notes": "Flexible product launch template. Adjust featureSectionCount based on content depth. For 60s at 30fps = 1800 frames total."
+}

@@ -1,0 +1,85 @@
+{
+  "id": "data-viz-story",
+  "style": "data-clean-professional",
+  "sequence": [
+    {
+      "block": "title-spring-basic",
+      "role": "title",
+      "durationFrames": 120,
+      "props": {
+        "title": "{{dashboardTitle}}",
+        "subtitle": "{{dashboardSubtitle}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "data-chart-build",
+      "role": "kpis",
+      "durationFrames": 240,
+      "props": {
+        "heading": "{{kpiTitle}}",
+        "vizType": "stat-grid",
+        "stats": "{{kpiData}}"
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "data-chart-build",
+      "role": "chart",
+      "durationFrames": 240,
+      "props": {
+        "heading": "{{chartTitle}}",
+        "vizType": "bar-chart",
+        "data": "{{chartData}}"
+      },
+      "transition": "slide-left"
+    },
+    {
+      "block": "data-chart-build",
+      "role": "breakdown",
+      "durationFrames": 210,
+      "props": {
+        "heading": "{{breakdownTitle}}",
+        "vizType": "progress-ring",
+        "percentage": "{{breakdownPercentage}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "content-bullet-stagger",
+      "role": "takeaways",
+      "durationFrames": 150,
+      "props": {
+        "heading": "{{takeawayTitle}}",
+        "bulletPoints": "{{takeawayPoints}}",
+        "layout": "left-aligned"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "cta-bounce",
+      "role": "closing",
+      "durationFrames": 150,
+      "props": {
+        "headline": "{{ctaText}}",
+        "subtext": "{{ctaSubtext}}"
+      },
+      "transition": null
+    }
+  ],
+  "variables": {
+    "dashboardTitle": { "type": "string", "description": "Dashboard title" },
+    "dashboardSubtitle": { "type": "string", "description": "Period or context subtitle" },
+    "kpiTitle": { "type": "string", "description": "KPI section heading" },
+    "kpiData": { "type": "array", "description": "KPI stats: {label, value, suffix}[]" },
+    "chartTitle": { "type": "string", "description": "Chart heading" },
+    "chartData": { "type": "array", "description": "Bar chart data: {label, value, color}[]" },
+    "breakdownTitle": { "type": "string", "description": "Breakdown section heading" },
+    "breakdownPercentage": { "type": "number", "description": "Main progress ring percentage" },
+    "takeawayTitle": { "type": "string", "description": "Key takeaways heading", "default": "Key Takeaways" },
+    "takeawayPoints": { "type": "string[]", "description": "Takeaway bullet points" },
+    "ctaText": { "type": "string", "description": "CTA headline" },
+    "ctaSubtext": { "type": "string", "description": "CTA supporting text" }
+  },
+  "notes": "Total ~1350 frames at 30fps = 45s. Add/remove data-chart-build blocks for more/fewer data sections."
+}

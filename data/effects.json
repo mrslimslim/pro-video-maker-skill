@@ -1,0 +1,497 @@
+[
+  {
+    "id": "typewriter",
+    "name": "Typewriter",
+    "category": "text",
+    "description": "Characters appear one by one with blinking cursor",
+    "params": {
+      "speed": "chars-per-second (default 20)",
+      "cursor": "boolean (default true)",
+      "cursorChar": "| or _ or ▌",
+      "easing": "linear"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "text.substring(0, Math.floor(frame * charsPerFrame))"
+    },
+    "bestFor": ["code", "terminal", "quotes", "dramatic reveals"],
+    "mood": ["technical", "deliberate", "dramatic"]
+  },
+  {
+    "id": "split-text",
+    "name": "Split Text",
+    "category": "text",
+    "description": "Words or characters animate in individually with stagger",
+    "params": {
+      "splitBy": "word | char",
+      "stagger": "0.03-0.12s",
+      "entryDirection": "up | down | left | right | scale | random",
+      "easing": "power2.out"
+    },
+    "remotion": {
+      "hook": "useGsapTimeline",
+      "method": "SplitText with gsap.from stagger"
+    },
+    "bestFor": ["titles", "headings", "hero text"],
+    "mood": ["dramatic", "elegant", "modern"]
+  },
+  {
+    "id": "bounce-in",
+    "name": "Bounce In",
+    "category": "text",
+    "description": "Text bounces into position with elastic easing",
+    "params": {
+      "easing": "elastic.out(1, 0.3) | bounce.out",
+      "distance": "30-80px",
+      "direction": "up | down",
+      "stagger": "0.04-0.08s"
+    },
+    "remotion": {
+      "hook": "spring",
+      "method": "spring({ fps, frame, config: { damping: 8 } })"
+    },
+    "bestFor": ["social", "playful", "notifications", "badges"],
+    "mood": ["playful", "energetic", "fun"]
+  },
+  {
+    "id": "word-reveal",
+    "name": "Word by Word Reveal",
+    "category": "text",
+    "description": "Words appear sequentially synced with narration",
+    "params": {
+      "timing": "per-word-duration",
+      "highlight": "boolean - highlight current word",
+      "fadeOthers": "dim previous words (0.5 opacity)"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "map words with frame-based visibility"
+    },
+    "bestFor": ["narration sync", "subtitles", "lyrics"],
+    "mood": ["narrative", "guided", "focused"]
+  },
+  {
+    "id": "glitch-text",
+    "name": "Glitch Text",
+    "category": "text",
+    "description": "Digital glitch artifacts on text",
+    "params": {
+      "intensity": "low | medium | high",
+      "rgbOffset": "1-5px",
+      "clipSlice": "2-8 slices",
+      "duration": "0.1-0.5s per glitch"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "CSS clip-path slices + color channel offset"
+    },
+    "bestFor": ["tech", "gaming", "cyberpunk", "error states"],
+    "mood": ["edgy", "digital", "chaotic"]
+  },
+  {
+    "id": "neon-glow",
+    "name": "Neon Glow",
+    "category": "text",
+    "description": "Text with animated neon glow effect and optional flicker",
+    "params": {
+      "glowColor": "from palette accent",
+      "glowSize": "10-30px",
+      "flicker": "boolean",
+      "flickerSpeed": "random intervals"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "text-shadow with animated blur radius"
+    },
+    "bestFor": ["nightlife", "gaming", "music", "neon-pulse style"],
+    "mood": ["energetic", "nightlife", "futuristic"]
+  },
+  {
+    "id": "kinetic-type",
+    "name": "Kinetic Typography",
+    "category": "text",
+    "description": "Text moves, scales, rotates with rhythm and energy",
+    "params": {
+      "movements": ["scale", "rotate", "translateX/Y"],
+      "rhythm": "beat-synced or timed",
+      "emphasis": "scale-up on key words"
+    },
+    "remotion": {
+      "hook": "useGsapTimeline",
+      "method": "GSAP timeline with multiple text element animations"
+    },
+    "bestFor": ["music videos", "social shorts", "quotes"],
+    "mood": ["energetic", "rhythmic", "bold"]
+  },
+  {
+    "id": "gradient-text",
+    "name": "Gradient Text",
+    "category": "text",
+    "description": "Animated gradient fill moving across text",
+    "params": {
+      "colors": "2-4 gradient stops from palette",
+      "direction": "horizontal | diagonal | radial",
+      "speed": "slow sweep"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "background-clip: text with animated gradient position"
+    },
+    "bestFor": ["modern", "creative", "hero text"],
+    "mood": ["modern", "vibrant", "premium"]
+  },
+  {
+    "id": "gradient-mesh",
+    "name": "Gradient Mesh",
+    "category": "background",
+    "description": "Multi-point animated gradient background",
+    "params": {
+      "points": "3-5 gradient centers",
+      "colors": "from palette",
+      "speed": "very slow movement",
+      "blur": "high"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Multiple radial-gradient with animated positions"
+    },
+    "bestFor": ["modern SaaS", "hero sections", "ambient"],
+    "mood": ["modern", "ambient", "premium"]
+  },
+  {
+    "id": "particle-rain",
+    "name": "Particle Rain",
+    "category": "background",
+    "description": "Floating particles moving slowly across screen",
+    "params": {
+      "count": "20-100 particles",
+      "size": "2-8px",
+      "speed": "slow drift",
+      "opacity": "0.1-0.4",
+      "shape": "circle | square | custom"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Map particle array with frame-based position"
+    },
+    "bestFor": ["celebrations", "magic", "ambient", "sci-fi"],
+    "mood": ["magical", "ambient", "dreamy"]
+  },
+  {
+    "id": "noise-grain",
+    "name": "Noise Grain",
+    "category": "background",
+    "description": "Film grain / noise texture overlay",
+    "params": {
+      "intensity": "0.02-0.15 opacity",
+      "animated": "boolean (frame-by-frame noise)",
+      "blend": "overlay | multiply"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "SVG feTurbulence filter with animated seed"
+    },
+    "bestFor": ["cinematic", "retro", "documentary", "film look"],
+    "mood": ["cinematic", "vintage", "textured"]
+  },
+  {
+    "id": "pattern-animate",
+    "name": "Pattern Animate",
+    "category": "background",
+    "description": "Repeating pattern with subtle movement",
+    "params": {
+      "pattern": "dots | lines | grid | chevron | waves",
+      "movement": "scroll | pulse | rotate",
+      "opacity": "0.05-0.2"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "CSS background-position animation"
+    },
+    "bestFor": ["geometric", "abstract", "subtle texture"],
+    "mood": ["structured", "subtle", "modern"]
+  },
+  {
+    "id": "color-shift",
+    "name": "Color Shift",
+    "category": "background",
+    "description": "Gradual background color transition over time",
+    "params": {
+      "from": "palette color A",
+      "to": "palette color B",
+      "easing": "linear or power1.inOut"
+    },
+    "remotion": {
+      "hook": "interpolateColors",
+      "method": "Remotion interpolateColors between palette values"
+    },
+    "bestFor": ["mood transitions", "time passage", "ambient"],
+    "mood": ["transitional", "ambient"]
+  },
+  {
+    "id": "wave",
+    "name": "Wave",
+    "category": "background",
+    "description": "Animated wave shapes at scene edges",
+    "params": {
+      "position": "bottom | top | both",
+      "amplitude": "20-60px",
+      "frequency": "2-5 waves across width",
+      "color": "from palette"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "SVG path with animated d attribute"
+    },
+    "bestFor": ["organic", "water", "wellness", "dividers"],
+    "mood": ["organic", "flowing", "calm"]
+  },
+  {
+    "id": "ken-burns-zoom",
+    "name": "Ken Burns Zoom",
+    "category": "camera",
+    "description": "Slow zoom on a static image creating motion from stillness",
+    "params": {
+      "zoomFrom": 1.0,
+      "zoomTo": 1.2,
+      "panX": "-5% to 5%",
+      "panY": "-3% to 3%"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate scale + translateX/Y over scene duration"
+    },
+    "bestFor": ["photos", "documentary", "storytelling"],
+    "mood": ["cinematic", "reflective", "slow"]
+  },
+  {
+    "id": "pan",
+    "name": "Pan",
+    "category": "camera",
+    "description": "Horizontal camera panning across content",
+    "params": {
+      "direction": "left-to-right | right-to-left",
+      "distance": "10-30%",
+      "easing": "power2.inOut"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate translateX over scene duration"
+    },
+    "bestFor": ["panoramas", "wide content", "reveals"],
+    "mood": ["exploratory", "revealing"]
+  },
+  {
+    "id": "dolly",
+    "name": "Dolly",
+    "category": "camera",
+    "description": "Forward or backward camera movement (scale-based)",
+    "params": {
+      "direction": "in | out",
+      "scaleRange": [1.0, 1.5],
+      "easing": "power2.inOut"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate scale to simulate depth movement"
+    },
+    "bestFor": ["immersive", "focus", "depth"],
+    "mood": ["immersive", "dramatic"]
+  },
+  {
+    "id": "shake",
+    "name": "Shake",
+    "category": "camera",
+    "description": "Camera shake effect for impact",
+    "params": {
+      "intensity": "low (2px) | medium (5px) | high (10px)",
+      "frequency": "frames between shakes",
+      "decay": "boolean - intensity decreases"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Random translateX/Y within intensity bounds"
+    },
+    "bestFor": ["impact moments", "action", "sports", "surprises"],
+    "mood": ["intense", "impactful", "energetic"]
+  },
+  {
+    "id": "focus-pull",
+    "name": "Focus Pull",
+    "category": "camera",
+    "description": "Blur shifts between foreground and background",
+    "params": {
+      "blurRange": "0-8px",
+      "target": "foreground → background or vice versa",
+      "easing": "power2.inOut"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate CSS filter blur on different layers"
+    },
+    "bestFor": ["cinematic", "depth", "attention directing"],
+    "mood": ["cinematic", "focused"]
+  },
+  {
+    "id": "chart-build",
+    "name": "Chart Build",
+    "category": "data",
+    "description": "D3 chart progressively draws/builds into view",
+    "params": {
+      "chartType": "bar | line | pie | donut | area",
+      "buildDirection": "left-to-right | bottom-up | radial",
+      "stagger": "per-data-point delay",
+      "labelFade": "labels appear after bars"
+    },
+    "remotion": {
+      "hook": "useD3Animation",
+      "method": "D3 scales + interpolated domain based on frame"
+    },
+    "bestFor": ["data stories", "reports", "analytics"],
+    "mood": ["professional", "informative"]
+  },
+  {
+    "id": "counter",
+    "name": "Counter Animation",
+    "category": "data",
+    "description": "Number counts up from 0 to target value",
+    "params": {
+      "target": "number",
+      "duration": "frames",
+      "format": "number | currency | percentage",
+      "locale": "number formatting locale",
+      "easing": "power2.out"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate 0 → target, Math.round, toLocaleString"
+    },
+    "bestFor": ["statistics", "KPIs", "achievements", "milestones"],
+    "mood": ["impressive", "data-driven"]
+  },
+  {
+    "id": "progress-bar",
+    "name": "Progress Bar",
+    "category": "data",
+    "description": "Animated bar filling to a percentage",
+    "params": {
+      "percentage": "0-100",
+      "style": "horizontal | circular | semi-circle",
+      "color": "from palette accent",
+      "labelPosition": "inside | outside | above"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "interpolate width/stroke-dashoffset"
+    },
+    "bestFor": ["progress", "comparison", "skills", "stats"],
+    "mood": ["informative", "comparative"]
+  },
+  {
+    "id": "map-highlight",
+    "name": "Map Highlight",
+    "category": "data",
+    "description": "Geographic map with regions highlighting",
+    "params": {
+      "mapType": "world | country | custom SVG",
+      "highlightRegions": "array of region IDs",
+      "stagger": "per-region delay",
+      "highlightColor": "from palette accent"
+    },
+    "remotion": {
+      "hook": "useD3Animation",
+      "method": "D3-geo projection + interpolated region fills"
+    },
+    "bestFor": ["geography", "markets", "distribution", "expansion"],
+    "mood": ["global", "expansive", "informative"]
+  },
+  {
+    "id": "draw-line",
+    "name": "Draw Line",
+    "category": "data",
+    "description": "SVG path draws itself progressively",
+    "params": {
+      "pathLength": "auto-calculated",
+      "easing": "power2.inOut",
+      "strokeWidth": "2-4px",
+      "color": "from palette"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "stroke-dasharray + stroke-dashoffset interpolation"
+    },
+    "bestFor": ["connections", "flow diagrams", "signatures", "routes"],
+    "mood": ["progressive", "connected"]
+  },
+  {
+    "id": "float",
+    "name": "Float",
+    "category": "decorative",
+    "description": "Elements gently float up and down",
+    "params": {
+      "amplitude": "5-20px",
+      "period": "2-5 seconds",
+      "phase": "random per element"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Math.sin(frame * speed) * amplitude"
+    },
+    "bestFor": ["ambient", "background elements", "icons"],
+    "mood": ["gentle", "ambient", "dreamy"]
+  },
+  {
+    "id": "light-leak",
+    "name": "Light Leak",
+    "category": "decorative",
+    "description": "Warm light leak overlay moving across frame",
+    "params": {
+      "color": "warm amber/orange",
+      "opacity": "0.1-0.3",
+      "blend": "screen | overlay",
+      "speed": "slow drift"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Radial gradient with animated position and opacity"
+    },
+    "bestFor": ["cinematic", "warm", "film look", "nostalgia"],
+    "mood": ["cinematic", "warm", "nostalgic"]
+  },
+  {
+    "id": "confetti",
+    "name": "Confetti",
+    "category": "decorative",
+    "description": "Confetti burst from top or center",
+    "params": {
+      "count": "50-200 pieces",
+      "colors": "array of 4-6 from palette",
+      "gravity": "acceleration",
+      "origin": "top | center | point"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Physics sim: gravity + random initial velocity per piece"
+    },
+    "bestFor": ["celebration", "achievement", "success", "party"],
+    "mood": ["celebratory", "joyful", "festive"]
+  },
+  {
+    "id": "sparkle",
+    "name": "Sparkle",
+    "category": "decorative",
+    "description": "Twinkling sparkle points across elements",
+    "params": {
+      "count": "5-20 points",
+      "size": "3-8px",
+      "duration": "0.3-0.8s per twinkle",
+      "color": "white or accent"
+    },
+    "remotion": {
+      "hook": "useCurrentFrame",
+      "method": "Opacity pulse with random timing per sparkle"
+    },
+    "bestFor": ["premium", "magic", "highlight", "luxury"],
+    "mood": ["magical", "premium", "elegant"]
+  }
+]

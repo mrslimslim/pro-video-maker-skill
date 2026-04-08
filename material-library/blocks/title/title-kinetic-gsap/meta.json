@@ -1,0 +1,31 @@
+{
+  "id": "title-kinetic-gsap",
+  "name": "Kinetic GSAP Title",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "title",
+  "tags": ["gsap", "kinetic", "split-text", "rotation", "energetic", "bold", "stagger"],
+  "description": "High-energy opening title powered by GSAP timeline. Words fly in with rotation, scale, and stagger. Includes an animated accent underline drawn via GSAP.",
+  "contextMatch": {
+    "mood": ["energetic", "bold", "playful", "dramatic"],
+    "industry": ["tech", "gaming", "social", "marketing", "creative"],
+    "platform": ["douyin", "tiktok", "reels", "youtube", "bilibili"],
+    "contentType": ["tips", "listicle", "product-launch", "hook", "social-short"]
+  },
+  "props": {
+    "title": { "type": "string", "required": true, "description": "Main title text (will be split into words)" },
+    "subtitle": { "type": "string", "required": false, "description": "Optional subtitle" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 60, "maxFrames": 150, "defaultFrames": 90 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["kinetic-typography", "social-punch", "glitch", "neon-pulse", "brutalist-motion"],
+  "compatibleTransitions": ["slide-up", "zoom", "push", "cut"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

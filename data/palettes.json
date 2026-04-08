@@ -1,0 +1,272 @@
+[
+  {
+    "id": "tech-dark",
+    "name": "Tech Dark",
+    "industry": ["tech", "saas", "developer", "ai"],
+    "mood": "professional",
+    "colors": {
+      "primary": "#6366F1",
+      "secondary": "#818CF8",
+      "accent": "#22D3EE",
+      "background": "#0F172A",
+      "surface": "#1E293B",
+      "text": "#F8FAFC",
+      "textSecondary": "#94A3B8"
+    }
+  },
+  {
+    "id": "tech-light",
+    "name": "Tech Light",
+    "industry": ["tech", "saas", "startup"],
+    "mood": "clean",
+    "colors": {
+      "primary": "#2563EB",
+      "secondary": "#3B82F6",
+      "accent": "#06B6D4",
+      "background": "#FFFFFF",
+      "surface": "#F1F5F9",
+      "text": "#0F172A",
+      "textSecondary": "#64748B"
+    }
+  },
+  {
+    "id": "neon-cyber",
+    "name": "Neon Cyber",
+    "industry": ["gaming", "cyberpunk", "nightlife", "music"],
+    "mood": "energetic",
+    "colors": {
+      "primary": "#00D4FF",
+      "secondary": "#FF00E5",
+      "accent": "#39FF14",
+      "background": "#0A0A0A",
+      "surface": "#1A1A2E",
+      "text": "#FFFFFF",
+      "textSecondary": "#A0A0A0"
+    }
+  },
+  {
+    "id": "warm-earth",
+    "name": "Warm Earth",
+    "industry": ["food", "restaurant", "cafe", "organic"],
+    "mood": "warm",
+    "colors": {
+      "primary": "#D97706",
+      "secondary": "#B45309",
+      "accent": "#059669",
+      "background": "#FFFBEB",
+      "surface": "#FEF3C7",
+      "text": "#1C1917",
+      "textSecondary": "#78716C"
+    }
+  },
+  {
+    "id": "health-green",
+    "name": "Health Green",
+    "industry": ["healthcare", "wellness", "fitness", "pharmacy"],
+    "mood": "calm",
+    "colors": {
+      "primary": "#059669",
+      "secondary": "#10B981",
+      "accent": "#06B6D4",
+      "background": "#F0FDF4",
+      "surface": "#DCFCE7",
+      "text": "#022C22",
+      "textSecondary": "#4B5563"
+    }
+  },
+  {
+    "id": "luxury-gold",
+    "name": "Luxury Gold",
+    "industry": ["luxury", "jewelry", "fashion", "watches"],
+    "mood": "premium",
+    "colors": {
+      "primary": "#D4AF37",
+      "secondary": "#C5A028",
+      "accent": "#FFFFFF",
+      "background": "#0A0A0A",
+      "surface": "#1A1A1A",
+      "text": "#FAFAFA",
+      "textSecondary": "#A3A3A3"
+    }
+  },
+  {
+    "id": "spa-blush",
+    "name": "Spa Blush",
+    "industry": ["beauty", "spa", "wellness", "skincare"],
+    "mood": "calm",
+    "colors": {
+      "primary": "#E8B4B8",
+      "secondary": "#A8D5BA",
+      "accent": "#D4AF37",
+      "background": "#FFF5F5",
+      "surface": "#FFF0F0",
+      "text": "#2D3436",
+      "textSecondary": "#636E72"
+    }
+  },
+  {
+    "id": "finance-blue",
+    "name": "Finance Blue",
+    "industry": ["fintech", "banking", "insurance", "crypto"],
+    "mood": "trustworthy",
+    "colors": {
+      "primary": "#1E40AF",
+      "secondary": "#1D4ED8",
+      "accent": "#10B981",
+      "background": "#F8FAFC",
+      "surface": "#EFF6FF",
+      "text": "#0F172A",
+      "textSecondary": "#475569"
+    }
+  },
+  {
+    "id": "creative-vibrant",
+    "name": "Creative Vibrant",
+    "industry": ["creative", "agency", "design", "art"],
+    "mood": "energetic",
+    "colors": {
+      "primary": "#EC4899",
+      "secondary": "#8B5CF6",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "surface": "#FDF4FF",
+      "text": "#18181B",
+      "textSecondary": "#71717A"
+    }
+  },
+  {
+    "id": "education-blue",
+    "name": "Education Blue",
+    "industry": ["education", "e-learning", "course", "university"],
+    "mood": "professional",
+    "colors": {
+      "primary": "#2563EB",
+      "secondary": "#7C3AED",
+      "accent": "#F59E0B",
+      "background": "#FFFFFF",
+      "surface": "#F5F3FF",
+      "text": "#1E1B4B",
+      "textSecondary": "#6B7280"
+    }
+  },
+  {
+    "id": "nature-forest",
+    "name": "Nature Forest",
+    "industry": ["nature", "sustainability", "eco", "travel"],
+    "mood": "serene",
+    "colors": {
+      "primary": "#166534",
+      "secondary": "#15803D",
+      "accent": "#CA8A04",
+      "background": "#F0FDF4",
+      "surface": "#ECFDF5",
+      "text": "#052E16",
+      "textSecondary": "#4B5563"
+    }
+  },
+  {
+    "id": "social-pop",
+    "name": "Social Pop",
+    "industry": ["social", "influencer", "lifestyle", "gen-z"],
+    "mood": "playful",
+    "colors": {
+      "primary": "#F43F5E",
+      "secondary": "#A855F7",
+      "accent": "#FACC15",
+      "background": "#18181B",
+      "surface": "#27272A",
+      "text": "#FAFAFA",
+      "textSecondary": "#A1A1AA"
+    }
+  },
+  {
+    "id": "retro-warm",
+    "name": "Retro Warm",
+    "industry": ["retro", "vintage", "music", "nostalgia"],
+    "mood": "nostalgic",
+    "colors": {
+      "primary": "#DC6B2F",
+      "secondary": "#C2410C",
+      "accent": "#4A7766",
+      "background": "#FFF7ED",
+      "surface": "#FFEDD5",
+      "text": "#431407",
+      "textSecondary": "#78716C"
+    }
+  },
+  {
+    "id": "monochrome-dark",
+    "name": "Monochrome Dark",
+    "industry": ["photography", "portfolio", "editorial", "architecture"],
+    "mood": "sophisticated",
+    "colors": {
+      "primary": "#FAFAFA",
+      "secondary": "#D4D4D4",
+      "accent": "#FAFAFA",
+      "background": "#0A0A0A",
+      "surface": "#171717",
+      "text": "#FAFAFA",
+      "textSecondary": "#737373"
+    }
+  },
+  {
+    "id": "pastel-dream",
+    "name": "Pastel Dream",
+    "industry": ["kids", "baby", "wedding", "invitation"],
+    "mood": "soft",
+    "colors": {
+      "primary": "#F9A8D4",
+      "secondary": "#C4B5FD",
+      "accent": "#67E8F9",
+      "background": "#FEFCE8",
+      "surface": "#FFF1F2",
+      "text": "#3F3F46",
+      "textSecondary": "#71717A"
+    }
+  },
+  {
+    "id": "sports-energy",
+    "name": "Sports Energy",
+    "industry": ["sports", "fitness", "gym", "athletic"],
+    "mood": "intense",
+    "colors": {
+      "primary": "#DC2626",
+      "secondary": "#EA580C",
+      "accent": "#FACC15",
+      "background": "#0C0A09",
+      "surface": "#1C1917",
+      "text": "#FAFAF9",
+      "textSecondary": "#A8A29E"
+    }
+  },
+  {
+    "id": "ocean-calm",
+    "name": "Ocean Calm",
+    "industry": ["travel", "cruise", "marine", "meditation"],
+    "mood": "peaceful",
+    "colors": {
+      "primary": "#0891B2",
+      "secondary": "#06B6D4",
+      "accent": "#F59E0B",
+      "background": "#ECFEFF",
+      "surface": "#CFFAFE",
+      "text": "#164E63",
+      "textSecondary": "#6B7280"
+    }
+  },
+  {
+    "id": "startup-gradient",
+    "name": "Startup Gradient",
+    "industry": ["startup", "saas", "app", "product-launch"],
+    "mood": "modern",
+    "colors": {
+      "primary": "#7C3AED",
+      "secondary": "#2563EB",
+      "accent": "#06B6D4",
+      "background": "#0F172A",
+      "surface": "#1E293B",
+      "text": "#F8FAFC",
+      "textSecondary": "#94A3B8"
+    }
+  }
+]

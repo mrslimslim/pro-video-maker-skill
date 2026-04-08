@@ -1,0 +1,39 @@
+{
+  "id": "minimal-zen",
+  "name": "极简禅意",
+  "description": "Clean white/cream canvas with a single dark accent. Generous whitespace, slow elegant animations, and gentle springs. Best for wellness, lifestyle, education, and mindfulness content.",
+  "palette": {
+    "primary": "#2D2D2D",
+    "secondary": "#6B6B6B",
+    "accent": "#2D2D2D",
+    "background": "#FAFAF8",
+    "surface": "#FFFFFF",
+    "text": "#1A1A1A",
+    "textSecondary": "#7A7A7A"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 300, "subtitle": 400, "body": 400, "caption": 300 },
+    "sizes1080p": { "title": 56, "subtitle": 32, "body": 24, "caption": 18 }
+  },
+  "motion": {
+    "style": "gentle-fade",
+    "easing": "power2.inOut",
+    "stagger": 0.08,
+    "intensity": "low",
+    "duration": "slow",
+    "rhythm": "contemplative"
+  },
+  "contextMatch": {
+    "mood": ["calm", "elegant", "minimal", "peaceful", "refined"],
+    "industry": ["wellness", "lifestyle", "education", "meditation", "architecture", "design"],
+    "platform": ["instagram", "xiaohongshu", "youtube"]
+  },
+  "sourceRefs": {
+    "paletteId": "minimal-light",
+    "typographyId": "modern-sans-light",
+    "motionStyleId": "gentle-fade"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "product-launch-showcase",
+  "name": "产品发布展示模板",
+  "description": "60-second product launch video showcasing features, metrics, and social proof. Gradient title → feature grids → stats → testimonial → CTA. Works for SaaS, apps, and product reveals.",
+  "platform": "youtube",
+  "aspectRatio": "16:9",
+  "resolution": { "width": 1920, "height": 1080 },
+  "fps": 30,
+  "durationSeconds": 60,
+  "totalFrames": 1800,
+  "style": "tech-dark-energetic",
+  "tags": ["product", "launch", "saas", "features", "showcase", "marketing"],
+  "bestFor": ["product launches", "SaaS demos", "app introductions", "feature announcements"],
+  "contextMatch": {
+    "contentType": ["product-launch", "feature-showcase", "marketing"],
+    "platform": ["youtube", "bilibili", "instagram"],
+    "duration": "45-90s"
+  },
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "social-proof-scroll",
+  "name": "Social Proof Marquee",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "social-proof",
+  "tags": ["reviews", "testimonials", "marquee", "scroll", "infinite", "trust"],
+  "description": "Horizontal infinite marquee of review cards driven by frame times speed; rounded cards with shadow; left/right gradient fade masks for a polished edge blend.",
+  "contextMatch": {
+    "mood": ["trustworthy", "energetic", "social", "upbeat"],
+    "industry": ["saas", "ecommerce", "consumer", "marketing", "local-business"],
+    "platform": ["youtube", "tiktok", "reels", "bilibili", "instagram", "xiaohongshu"],
+    "contentType": ["testimonials", "ugc", "launch", "landing-page-style"]
+  },
+  "props": {
+    "items": {
+      "type": "array",
+      "required": true,
+      "description": "Review rows: quote text, author, optional platform label",
+      "items": { "text": "string", "author": "string", "platform": "string?" }
+    },
+    "backgroundColor": { "type": "color", "default": "#0B1220" },
+    "textColor": { "type": "color", "default": "#E2E8F0" },
+    "accentColor": { "type": "color", "default": "#38BDF8" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "speed": { "type": "number", "default": 1, "description": "Scroll speed multiplier" }
+  },
+  "duration": { "minFrames": 180, "maxFrames": 360, "defaultFrames": 240 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["minimal-motion", "social-native", "product-demo"],
+  "compatibleTransitions": ["fade", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

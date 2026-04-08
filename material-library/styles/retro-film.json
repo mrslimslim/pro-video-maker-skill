@@ -1,0 +1,39 @@
+{
+  "id": "retro-film",
+  "name": "复古胶片",
+  "description": "Warm sepia-toned palette with film grain texture and light leak overlays. Slow cinematic pacing with warm amber glows. Best for documentary, storytelling, nostalgia, and food/restaurant content.",
+  "palette": {
+    "primary": "#C4956A",
+    "secondary": "#5C8A4D",
+    "accent": "#E8985E",
+    "background": "#1C1510",
+    "surface": "#2A2117",
+    "text": "#F5E6D3",
+    "textSecondary": "#B8A08A"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 700, "subtitle": 500, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 60, "subtitle": 36, "body": 26, "caption": 18 }
+  },
+  "motion": {
+    "style": "cinematic-slow",
+    "easing": "power2.inOut",
+    "stagger": 0.08,
+    "intensity": "low",
+    "duration": "slow",
+    "rhythm": "cinematic"
+  },
+  "contextMatch": {
+    "mood": ["cinematic", "warm", "nostalgic", "emotional", "vintage"],
+    "industry": ["film", "documentary", "food", "restaurant", "travel", "storytelling"],
+    "platform": ["youtube", "bilibili", "instagram"]
+  },
+  "sourceRefs": {
+    "paletteId": "warm-sepia",
+    "typographyId": "modern-sans",
+    "motionStyleId": "cinematic-slow"
+  }
+}

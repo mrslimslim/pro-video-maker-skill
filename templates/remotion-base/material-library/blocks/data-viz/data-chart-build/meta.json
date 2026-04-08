@@ -1,0 +1,34 @@
+{
+  "id": "data-chart-build",
+  "name": "Data Chart Build",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "data-viz",
+  "tags": ["chart", "counter", "progress-ring", "stat-grid", "d3", "data-visualization"],
+  "description": "Data visualization scene supporting bar charts, counter animations, progress rings, and stat grids. Uses D3 for chart rendering and spring animations for reveals.",
+  "contextMatch": {
+    "mood": ["professional", "modern", "informative"],
+    "industry": ["tech", "saas", "finance", "education", "marketing", "analytics"],
+    "platform": ["youtube", "bilibili", "instagram", "xiaohongshu"],
+    "contentType": ["statistics", "comparisons", "KPIs", "progress", "report", "dashboard"]
+  },
+  "props": {
+    "heading": { "type": "string", "required": true, "description": "Chart heading" },
+    "vizType": { "type": "enum", "values": ["bar-chart", "counter", "progress-ring", "stat-grid"], "required": true },
+    "data": { "type": "array", "required": false, "description": "Bar chart data: {label, value, color?}[]" },
+    "stats": { "type": "array", "required": false, "description": "Stat grid data: {label, value, suffix?}[]" },
+    "percentage": { "type": "number", "required": false, "description": "Progress ring percentage" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 150, "maxFrames": 300, "defaultFrames": 210 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["DataViz (BarChart, ProgressRing)", "AnimatedText (Counter)"],
+  "compatibleStyles": ["data-story", "infographic-motion", "minimal-motion", "bento-grid-motion"],
+  "compatibleTransitions": ["fade", "slide-left", "dissolve"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

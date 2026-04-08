@@ -1,0 +1,32 @@
+{
+  "id": "content-glassmorphic",
+  "name": "Glassmorphic Content Card",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "content",
+  "tags": ["glassmorphism", "card", "blur", "gradient-border", "modern", "spring", "gsap"],
+  "description": "Frosted glass content card with 1px gradient frame, backdrop blur, spring-driven entrance, staggered title and body, and GSAP accent bar reveal.",
+  "contextMatch": {
+    "mood": ["modern", "premium", "calm", "futuristic"],
+    "industry": ["saas", "fintech", "creative", "lifestyle", "tech"],
+    "platform": ["instagram", "tiktok", "reels", "youtube", "xiaohongshu", "douyin"],
+    "contentType": ["announcement", "value-prop", "quote", "tip", "hero-copy"]
+  },
+  "props": {
+    "title": { "type": "string", "required": true, "description": "Primary headline" },
+    "body": { "type": "string", "required": true, "description": "Supporting body copy" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#A78BFA" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "blurAmount": { "type": "number", "default": 20, "description": "Backdrop blur strength in px" }
+  },
+  "duration": { "minFrames": 60, "maxFrames": 180, "defaultFrames": 120 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["all"],
+  "compatibleTransitions": ["fade", "slide-up"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

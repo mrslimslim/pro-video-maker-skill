@@ -1,0 +1,21 @@
+{
+  "id": "data-viz-story",
+  "name": "数据可视化故事模板",
+  "description": "45-second square data dashboard video. Title → KPIs → Charts → Breakdown → Takeaways → CTA. Optimized for Instagram/Xiaohongshu.",
+  "platform": "instagram",
+  "aspectRatio": "1:1",
+  "resolution": { "width": 1080, "height": 1080 },
+  "fps": 30,
+  "durationSeconds": 45,
+  "totalFrames": 1350,
+  "style": "data-clean-professional",
+  "tags": ["data", "dashboard", "instagram", "xiaohongshu", "metrics", "report", "square"],
+  "bestFor": ["quarterly reports", "metrics dashboards", "analytics summaries", "KPI showcases"],
+  "contextMatch": {
+    "contentType": ["report", "dashboard", "analytics", "data-story"],
+    "platform": ["instagram", "xiaohongshu"],
+    "duration": "30-60s"
+  },
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

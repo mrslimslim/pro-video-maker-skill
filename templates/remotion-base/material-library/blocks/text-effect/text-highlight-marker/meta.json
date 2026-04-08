@@ -1,0 +1,37 @@
+{
+  "id": "text-highlight-marker",
+  "name": "Text Highlight Marker",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "text-effect",
+  "tags": ["text", "highlight", "marker", "spring", "stagger", "education"],
+  "description": "Lines enter with springed y and opacity stagger; configurable words get a highlighter bar that scales from left to right behind the glyph layer.",
+  "contextMatch": {
+    "mood": ["focused", "educational", "clean", "modern"],
+    "industry": ["education", "saas", "marketing", "news", "product"],
+    "platform": ["youtube", "bilibili", "linkedin", "courseware"],
+    "contentType": ["explainer", "bullet-points", "key-ideas", "chapters"]
+  },
+  "props": {
+    "lines": {
+      "type": "array",
+      "required": true,
+      "description": "Lines of text with optional per-line highlight word/color pairs",
+      "items": {
+        "text": "string",
+        "highlights": "Array<{ word: string, color: string }>?"
+      }
+    },
+    "backgroundColor": { "type": "color", "default": "#FAFAF9" },
+    "textColor": { "type": "color", "default": "#1C1917" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 300, "defaultFrames": 200 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["editorial", "minimal-motion", "storytelling-flow"],
+  "compatibleTransitions": ["fade", "slide-up"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

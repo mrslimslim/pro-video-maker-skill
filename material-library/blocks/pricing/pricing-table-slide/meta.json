@@ -1,0 +1,41 @@
+{
+  "id": "pricing-table-slide",
+  "name": "Pricing Table Slide",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "pricing",
+  "tags": ["pricing", "saas", "plans", "gsap", "stagger", "counter", "cta"],
+  "description": "Pricing cards slide in from alternating sides with stagger; highlighted tier scales up with accent border; price counts up; features and CTA animate in.",
+  "contextMatch": {
+    "mood": ["professional", "confident", "modern", "sales"],
+    "industry": ["saas", "b2b", "startup", "product", "finance"],
+    "platform": ["youtube", "bilibili", "linkedin", "website-embed"],
+    "contentType": ["pricing", "pitch", "product-launch", "comparison"]
+  },
+  "props": {
+    "plans": {
+      "type": "array",
+      "required": true,
+      "description": "Plan rows: name, price, optional period, features, optional highlighted",
+      "items": {
+        "name": "string",
+        "price": "number",
+        "period": "string?",
+        "features": "string[]",
+        "highlighted": "boolean?"
+      }
+    },
+    "backgroundColor": { "type": "color", "default": "#0B1220" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["minimal-motion", "corporate", "product-demo"],
+  "compatibleTransitions": ["fade", "slide-up", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "cta-glow-pulse",
+  "name": "CTA Glow Pulse",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "cta",
+  "tags": ["cta", "button", "glow", "gradient", "spring", "conversion"],
+  "description": "Headline springs in with scale; optional subtext fades up; CTA uses shifting gradient fill, breathing outer glow, and a periodically bouncing arrow for a refined conversion beat.",
+  "contextMatch": {
+    "mood": ["bold", "premium", "urgent-soft", "energetic"],
+    "industry": ["saas", "product", "ecommerce", "creator", "events"],
+    "platform": ["youtube", "tiktok", "reels", "ads", "landing-embed"],
+    "contentType": ["cta", "outro", "promo", "launch"]
+  },
+  "props": {
+    "headline": { "type": "string", "required": true, "description": "Primary headline above the CTA" },
+    "subtext": { "type": "string", "required": false, "description": "Supporting line under the headline" },
+    "buttonText": { "type": "string", "required": false, "description": "Label inside the glowing button" },
+    "backgroundColor": { "type": "color", "default": "#030712" },
+    "textColor": { "type": "color", "default": "#F9FAFB" },
+    "accentColor": { "type": "color", "default": "#A78BFA" },
+    "glowColor": { "type": "color", "required": false, "description": "Defaults to accentColor when omitted" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 90, "maxFrames": 180, "defaultFrames": 120 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["neon-lite", "product-demo", "social-native"],
+  "compatibleTransitions": ["fade", "flash", "zoom-subtle"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

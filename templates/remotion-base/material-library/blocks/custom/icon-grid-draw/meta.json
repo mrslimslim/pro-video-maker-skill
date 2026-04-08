@@ -1,0 +1,38 @@
+{
+  "id": "icon-grid-draw",
+  "name": "Vivus Icon Grid Draw",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "custom",
+  "tags": ["vivus", "svg", "icons", "grid", "stagger", "features", "services", "draw"],
+  "description": "Grid of SVG icons (2x2 or 3x3), each drawn sequentially with Vivus.js stroke animation and staggered timing controlled by GSAP. Each icon has a label that fades in after its draw completes.",
+  "contextMatch": {
+    "mood": ["professional", "modern", "friendly", "playful"],
+    "industry": ["tech", "saas", "education", "marketing", "consulting"],
+    "platform": ["youtube", "bilibili", "instagram", "linkedin"],
+    "contentType": ["features", "services", "skill-list", "process-overview", "capabilities"]
+  },
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Optional heading" },
+    "icons": {
+      "type": "array",
+      "required": true,
+      "description": "Array of { svgContent: string, label: string }"
+    },
+    "columns": { "type": "number", "default": 3, "description": "Grid columns (2 or 3)" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "strokeColor": { "type": "color", "default": "#6366F1" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "drawDurationFrames": { "type": "number", "default": 30, "description": "Draw frames per icon" },
+    "staggerFrames": { "type": "number", "default": 15, "description": "Stagger delay between icons" }
+  },
+  "duration": { "minFrames": 150, "maxFrames": 300, "defaultFrames": 240 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useVivusAnimation hook", "vivus"],
+  "compatibleStyles": ["flat-explainer", "infographic-motion", "icon-grid", "minimal-motion"],
+  "compatibleTransitions": ["fade", "slide-up"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

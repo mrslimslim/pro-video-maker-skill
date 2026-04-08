@@ -1,0 +1,33 @@
+{
+  "id": "before-after-wipe",
+  "name": "Before / After Wipe",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "before-after",
+  "tags": ["comparison", "split", "wipe", "divider", "clip-path", "transform"],
+  "description": "Animated vertical divider sweeps from the edge toward center; before/after sides revealed via clip-path; handle dot on the line; labels fade in as the wipe settles.",
+  "contextMatch": {
+    "mood": ["decisive", "dramatic", "clear", "marketing"],
+    "industry": ["saas", "product", "design", "fitness", "beauty", "realestate"],
+    "platform": ["youtube", "tiktok", "reels", "instagram", "ads"],
+    "contentType": ["before-after", "transformation", "product-demo", "ads"]
+  },
+  "props": {
+    "beforeLabel": { "type": "string", "default": "Before" },
+    "afterLabel": { "type": "string", "default": "After" },
+    "beforeColor": { "type": "color", "default": "#64748B" },
+    "afterColor": { "type": "color", "default": "#22C55E" },
+    "dividerColor": { "type": "color", "default": "#F8FAFC" },
+    "backgroundColor": { "type": "color", "default": "#020617" },
+    "textColor": { "type": "color", "default": "#F1F5F9" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 90, "maxFrames": 180, "defaultFrames": 120 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["high-contrast", "product-demo", "ads-cut"],
+  "compatibleTransitions": ["fade", "hard-cut"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

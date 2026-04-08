@@ -1,0 +1,35 @@
+{
+  "id": "data-pie-d3",
+  "name": "D3 Pie / Donut",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "data-viz",
+  "tags": ["d3", "pie", "donut", "chart", "legend", "stagger", "data-visualization"],
+  "description": "Donut or pie chart built with d3.pie and d3.arc, animating each slice sweep by progress and revealing legend rows with staggered springs.",
+  "contextMatch": {
+    "mood": ["professional", "informative", "data-driven"],
+    "industry": ["finance", "analytics", "tech", "education", "saas"],
+    "platform": ["youtube", "bilibili", "instagram", "linkedin", "xiaohongshu"],
+    "contentType": ["statistics", "breakdowns", "proportions", "report", "dashboard", "survey"]
+  },
+  "props": {
+    "title": { "type": "string", "required": false, "description": "Optional heading above the chart" },
+    "data": {
+      "type": "array",
+      "required": true,
+      "description": "Slices: { label, value, color? }[]"
+    },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "innerRadius": { "type": "number", "default": 60, "description": "Donut hole radius (0 for pie)" },
+    "outerRadius": { "type": "number", "default": 120 }
+  },
+  "duration": { "minFrames": 150, "maxFrames": 300, "defaultFrames": 210 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "compatibleStyles": ["data-clean-professional", "data-story", "infographic-motion", "minimal-motion"],
+  "compatibleTransitions": ["fade", "dissolve", "slide-left"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

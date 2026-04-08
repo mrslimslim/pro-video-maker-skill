@@ -1,0 +1,39 @@
+{
+  "id": "neon-cyberpunk",
+  "name": "霓虹赛博朋克",
+  "description": "Deep black canvas with vivid neon magenta, cyan, and purple accents. Fast-paced glitch and neon-glow animations create an edgy, futuristic atmosphere. Best for gaming, music, tech, and nightlife content.",
+  "palette": {
+    "primary": "#FF006E",
+    "secondary": "#B388FF",
+    "accent": "#00F5D4",
+    "background": "#0A0A0A",
+    "surface": "#1A1A2E",
+    "text": "#F0F0F0",
+    "textSecondary": "#A0A0B0"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 800, "subtitle": 600, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 72, "subtitle": 40, "body": 26, "caption": 18 }
+  },
+  "motion": {
+    "style": "glitch-neon",
+    "easing": "power3.out",
+    "stagger": 0.03,
+    "intensity": "very-high",
+    "duration": "fast",
+    "rhythm": "aggressive"
+  },
+  "contextMatch": {
+    "mood": ["edgy", "energetic", "futuristic", "dramatic", "chaotic"],
+    "industry": ["gaming", "music", "nightlife", "tech", "cybersecurity", "entertainment"],
+    "platform": ["douyin", "tiktok", "reels", "youtube"]
+  },
+  "sourceRefs": {
+    "paletteId": "neon-dark",
+    "typographyId": "modern-sans-heavy",
+    "motionStyleId": "glitch-neon"
+  }
+}

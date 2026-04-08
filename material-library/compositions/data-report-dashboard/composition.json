@@ -1,0 +1,80 @@
+{
+  "id": "data-report-dashboard",
+  "style": "data-clean-professional",
+  "sequence": [
+    {
+      "block": "title-spring-basic",
+      "role": "intro",
+      "durationFrames": 75,
+      "props": {
+        "title": "{{reportTitle}}",
+        "subtitle": "{{reportSubtitle}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "data-number-highlight",
+      "role": "key-metric",
+      "durationFrames": 120,
+      "props": {
+        "value": "{{keyMetric.value}}",
+        "label": "{{keyMetric.label}}",
+        "prefix": "{{keyMetric.prefix}}",
+        "suffix": "{{keyMetric.suffix}}"
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "data-pie-d3",
+      "role": "distribution",
+      "durationFrames": 150,
+      "props": {
+        "title": "{{pieTitle}}",
+        "data": "{{pieData}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "data-line-chart-d3",
+      "role": "trend",
+      "durationFrames": 150,
+      "props": {
+        "title": "{{lineTitle}}",
+        "data": "{{lineData}}"
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "stats-counter-row",
+      "role": "summary",
+      "durationFrames": 120,
+      "props": {
+        "stats": "{{summaryStats}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "cta-bounce",
+      "role": "closing",
+      "durationFrames": 75,
+      "props": {
+        "headline": "{{ctaHeadline}}",
+        "buttonText": "{{ctaButton}}"
+      },
+      "transition": "fade"
+    }
+  ],
+  "variables": {
+    "reportTitle": { "type": "string", "description": "Report title for opening slide" },
+    "reportSubtitle": { "type": "string", "default": null },
+    "keyMetric": { "type": "object", "description": "{value, label, prefix?, suffix?} for spotlight number" },
+    "pieTitle": { "type": "string", "description": "Title for pie chart section" },
+    "pieData": { "type": "array", "description": "Array of {label, value, color} for pie chart" },
+    "lineTitle": { "type": "string", "description": "Title for line chart section" },
+    "lineData": { "type": "array", "description": "Array of {x, y} data points for line chart" },
+    "summaryStats": { "type": "array", "description": "Array of {value, label, prefix?, suffix?} for summary row" },
+    "ctaHeadline": { "type": "string", "default": "See the Full Report" },
+    "ctaButton": { "type": "string", "default": null }
+  },
+  "notes": "Data-driven report template. Title → key metric spotlight → pie distribution → line trend → summary stats → CTA. ~75s at 30fps."
+}

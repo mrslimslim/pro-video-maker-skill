@@ -1,0 +1,30 @@
+{
+  "id": "quote-fade",
+  "name": "Fade-in Quote",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "quote",
+  "tags": ["quote", "italic", "attribution", "elegant", "quotation-mark"],
+  "description": "Quote scene with animated quotation mark, italic text fade-in, and optional author attribution. Best for testimonials, famous quotes, and key takeaways.",
+  "contextMatch": {
+    "mood": ["dramatic", "elegant", "calm", "emotional"],
+    "industry": ["education", "marketing", "luxury", "editorial", "wellness"],
+    "platform": ["youtube", "bilibili", "instagram", "xiaohongshu", "douyin", "tiktok"],
+    "contentType": ["testimonials", "quotes", "key-takeaways", "storytelling"]
+  },
+  "props": {
+    "quote": { "type": "string", "required": true, "description": "The quote text" },
+    "author": { "type": "string", "required": false, "description": "Attribution / author name" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 180, "defaultFrames": 150 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "compatibleStyles": ["cinematic", "minimal-motion", "editorial", "storytelling-flow"],
+  "compatibleTransitions": ["fade", "dissolve", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

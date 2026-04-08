@@ -1,0 +1,39 @@
+{
+  "id": "data-clean-professional",
+  "name": "数据清洁专业风",
+  "description": "Clean light-background style with blue accent and moderate data-story motion. Optimized for readability and data visualization in professional contexts.",
+  "palette": {
+    "primary": "#2563EB",
+    "secondary": "#3B82F6",
+    "accent": "#06B6D4",
+    "background": "#FFFFFF",
+    "surface": "#F1F5F9",
+    "text": "#0F172A",
+    "textSecondary": "#64748B"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 700, "subtitle": 600, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 64, "subtitle": 40, "body": 28, "caption": 20 }
+  },
+  "motion": {
+    "style": "data-story",
+    "easing": "power2.out",
+    "stagger": 0.08,
+    "intensity": "moderate",
+    "duration": "normal",
+    "rhythm": "calm"
+  },
+  "contextMatch": {
+    "mood": ["professional", "clean", "informative"],
+    "industry": ["finance", "analytics", "education", "saas", "corporate"],
+    "platform": ["youtube", "bilibili", "instagram"]
+  },
+  "sourceRefs": {
+    "paletteId": "tech-light",
+    "typographyId": "modern-sans",
+    "motionStyleId": "data-story"
+  }
+}

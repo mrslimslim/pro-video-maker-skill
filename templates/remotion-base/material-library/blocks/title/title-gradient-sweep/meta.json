@@ -1,0 +1,32 @@
+{
+  "id": "title-gradient-sweep",
+  "name": "Gradient Sweep Title",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "title",
+  "tags": ["gsap", "gradient", "sweep", "modern", "premium", "blur-reveal"],
+  "description": "Modern title with animated gradient text and a light sweep effect. Text reveals from blur with a gradient underline that scales in. The gradient continuously animates across the text.",
+  "contextMatch": {
+    "mood": ["modern", "premium", "elegant", "creative"],
+    "industry": ["tech", "saas", "design", "fashion", "luxury", "creative"],
+    "platform": ["youtube", "bilibili", "instagram", "xiaohongshu"],
+    "contentType": ["product-launch", "brand", "explainer", "hero"]
+  },
+  "props": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": false },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "gradientFrom": { "type": "color", "default": "#6366F1" },
+    "gradientTo": { "type": "color", "default": "#22D3EE" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 60, "maxFrames": 150, "defaultFrames": 90 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["all"],
+  "compatibleTransitions": ["fade", "dissolve", "slide-up", "blur-through"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

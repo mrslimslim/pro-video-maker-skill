@@ -1,0 +1,35 @@
+{
+  "id": "comparison-split-gsap",
+  "name": "GSAP Split Comparison",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "comparison",
+  "tags": ["gsap", "comparison", "split-screen", "before-after", "versus", "wipe"],
+  "description": "Side-by-side comparison scene with GSAP-animated center divider, left/right content sliding in, and label fade-in. Great for before/after, A vs B, and feature comparisons.",
+  "contextMatch": {
+    "mood": ["informative", "professional", "modern"],
+    "industry": ["tech", "marketing", "education", "saas"],
+    "platform": ["youtube", "bilibili", "instagram", "douyin", "tiktok"],
+    "contentType": ["before-after", "A-vs-B", "old-vs-new", "comparison"]
+  },
+  "props": {
+    "leftLabel": { "type": "string", "required": true, "description": "Left side label" },
+    "rightLabel": { "type": "string", "required": true, "description": "Right side label" },
+    "leftContent": { "type": "string", "required": true, "description": "Left side body text" },
+    "rightContent": { "type": "string", "required": true, "description": "Right side body text" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "leftColor": { "type": "color", "default": "#EF4444" },
+    "rightColor": { "type": "color", "default": "#22C55E" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["split-screen", "infographic-motion", "minimal-motion"],
+  "compatibleTransitions": ["wipe-horizontal", "slide-left", "fade"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "logo-reveal-draw",
+  "name": "Logo Reveal — Stroke Draw",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "logo-reveal",
+  "tags": ["logo", "svg", "stroke", "draw", "vector", "minimal"],
+  "description": "An SVG path draws itself with stroke-dash animation, fill fades in, and an optional label springs in beneath. Clean vector logo reveals.",
+  "contextMatch": {
+    "mood": ["elegant", "calm", "professional", "minimal"],
+    "industry": ["saas", "finance", "wellness", "education", "design"],
+    "platform": ["youtube", "bilibili", "linkedin", "instagram"],
+    "contentType": ["intros", "logo-stings", "brand", "explainers"]
+  },
+  "props": {
+    "svgPath": { "type": "string", "required": true, "description": "SVG path d attribute" },
+    "label": { "type": "string", "required": false, "description": "Optional caption under mark" },
+    "backgroundColor": { "type": "color", "default": "#0B1120" },
+    "strokeColor": { "type": "color", "default": "#E2E8F0" },
+    "fillColor": { "type": "color", "default": "#38BDF8" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["minimal-motion", "editorial", "storytelling-flow"],
+  "compatibleTransitions": ["fade", "dissolve", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

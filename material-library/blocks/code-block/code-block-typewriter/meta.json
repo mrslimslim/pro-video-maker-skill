@@ -1,0 +1,33 @@
+{
+  "id": "code-block-typewriter",
+  "name": "Code Block Typewriter",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "code-block",
+  "tags": ["gsap", "code", "typewriter", "syntax-highlight", "terminal", "developer"],
+  "description": "Code snippet scene with GSAP-driven line-by-line typewriter effect, blinking cursor, and optional line highlighting. Dark editor theme with monospace font.",
+  "contextMatch": {
+    "mood": ["technical", "professional", "modern"],
+    "industry": ["tech", "developer", "saas", "education"],
+    "platform": ["youtube", "bilibili", "douyin", "tiktok"],
+    "contentType": ["tutorials", "dev-content", "API-demos", "code-walkthrough"]
+  },
+  "props": {
+    "code": { "type": "string", "required": true, "description": "Code string (newlines preserved)" },
+    "language": { "type": "string", "required": false, "default": "javascript", "description": "Language label shown in header" },
+    "highlightLines": { "type": "number[]", "required": false, "description": "1-based line numbers to highlight" },
+    "title": { "type": "string", "required": false, "description": "Optional title above code block" },
+    "backgroundColor": { "type": "color", "default": "#0D1117" },
+    "textColor": { "type": "color", "default": "#E6EDF3" },
+    "accentColor": { "type": "color", "default": "#58A6FF" },
+    "fontFamily": { "type": "string", "default": "JetBrains Mono, monospace" }
+  },
+  "duration": { "minFrames": 150, "maxFrames": 300, "defaultFrames": 240 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["code-demo", "kinetic-typography", "tutorial-step"],
+  "compatibleTransitions": ["slide-left", "fade", "slide-up"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

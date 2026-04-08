@@ -1,0 +1,39 @@
+{
+  "id": "gradient-dreamy",
+  "name": "梦幻渐变",
+  "description": "Soft pastel gradient palette flowing between pink, lavender, and sky blue. Smooth blur transitions and dreamy floating animations. Best for beauty, fashion, creative, and social lifestyle content.",
+  "palette": {
+    "primary": "#E879A8",
+    "secondary": "#A78BFA",
+    "accent": "#7DD3FC",
+    "background": "#FDF2F8",
+    "surface": "#FFFFFF",
+    "text": "#1E1B4B",
+    "textSecondary": "#6B7280"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 600, "subtitle": 500, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 60, "subtitle": 36, "body": 26, "caption": 18 }
+  },
+  "motion": {
+    "style": "dreamy-float",
+    "easing": "power2.inOut",
+    "stagger": 0.06,
+    "intensity": "medium",
+    "duration": "normal",
+    "rhythm": "flowing"
+  },
+  "contextMatch": {
+    "mood": ["dreamy", "soft", "romantic", "creative", "playful"],
+    "industry": ["beauty", "fashion", "lifestyle", "social", "wedding", "creative"],
+    "platform": ["xiaohongshu", "instagram", "douyin", "tiktok"]
+  },
+  "sourceRefs": {
+    "paletteId": "pastel-gradient",
+    "typographyId": "modern-sans-medium",
+    "motionStyleId": "dreamy-float"
+  }
+}

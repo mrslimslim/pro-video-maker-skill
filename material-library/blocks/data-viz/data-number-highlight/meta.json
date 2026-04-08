@@ -1,0 +1,40 @@
+{
+  "id": "data-number-highlight",
+  "name": "Data Number Highlight",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "data-viz",
+  "tags": [
+    "kpi",
+    "counter",
+    "big-number",
+    "progress-ring",
+    "metric",
+    "data-visualization",
+    "interpolate"
+  ],
+  "description": "Large centered statistic that counts up from zero with a synchronized circular progress ring, a scale pulse near the end of the count, and a label that eases in after the value settles.",
+  "contextMatch": {
+    "mood": ["professional", "informative", "data-driven"],
+    "industry": ["finance", "analytics", "tech", "education", "saas"],
+    "platform": ["youtube", "bilibili", "instagram", "linkedin", "xiaohongshu"],
+    "contentType": ["statistics", "KPIs", "metrics", "report", "dashboard", "highlights"]
+  },
+  "props": {
+    "value": { "type": "number", "required": true, "description": "Target numeric value to count up to" },
+    "label": { "type": "string", "required": true, "description": "Caption shown below the number" },
+    "prefix": { "type": "string", "required": false, "description": "Optional prefix (e.g. currency symbol)" },
+    "suffix": { "type": "string", "required": false, "description": "Optional suffix (e.g. %)" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "compatibleStyles": ["data-clean-professional", "data-story", "infographic-motion", "minimal-motion"],
+  "compatibleTransitions": ["fade", "dissolve", "slide-left"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

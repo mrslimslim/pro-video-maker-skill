@@ -1,0 +1,297 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-04-06",
+  "stats": {
+    "blocks": 35,
+    "assets": 0,
+    "styles": 8,
+    "compositions": 6
+  },
+  "blocks": [
+    {
+      "id": "content-bullet-stagger",
+      "category": "content",
+      "path": "blocks/content/content-bullet-stagger",
+      "tags": ["bullet-points", "stagger", "heading", "multi-layout", "body-text"]
+    },
+    {
+      "id": "content-card-stack",
+      "category": "content",
+      "path": "blocks/content/content-card-stack",
+      "tags": ["3d", "cards", "stack", "fan-out", "perspective", "gsap"]
+    },
+    {
+      "id": "content-timeline-vertical",
+      "category": "content",
+      "path": "blocks/content/content-timeline-vertical",
+      "tags": ["timeline", "vertical", "nodes", "gsap", "vivus", "milestones"]
+    },
+    {
+      "id": "content-glassmorphic",
+      "category": "content",
+      "path": "blocks/content/content-glassmorphic",
+      "tags": ["glassmorphism", "blur", "frosted", "modern", "card", "spring"]
+    },
+    {
+      "id": "cta-bounce",
+      "category": "cta",
+      "path": "blocks/cta/cta-bounce",
+      "tags": ["bounce", "button", "pulse", "call-to-action", "closing"]
+    },
+    {
+      "id": "cta-glow-pulse",
+      "category": "cta",
+      "path": "blocks/cta/cta-glow-pulse",
+      "tags": ["glow", "pulse", "gradient", "arrow", "premium", "call-to-action"]
+    },
+    {
+      "id": "data-chart-build",
+      "category": "data-viz",
+      "path": "blocks/data-viz/data-chart-build",
+      "tags": ["chart", "counter", "progress-ring", "stat-grid", "data-visualization"]
+    },
+    {
+      "id": "data-number-highlight",
+      "category": "data-viz",
+      "path": "blocks/data-viz/data-number-highlight",
+      "tags": ["number", "counter", "spotlight", "ring", "kpi", "metric"]
+    },
+    {
+      "id": "data-pie-d3",
+      "category": "data-viz",
+      "path": "blocks/data-viz/data-pie-d3",
+      "tags": ["d3", "pie", "donut", "arc", "legend", "distribution"]
+    },
+    {
+      "id": "data-line-chart-d3",
+      "category": "data-viz",
+      "path": "blocks/data-viz/data-line-chart-d3",
+      "tags": ["d3", "line-chart", "trend", "axes", "dots", "time-series"]
+    },
+    {
+      "id": "flow-diagram-draw",
+      "category": "data-viz",
+      "path": "blocks/data-viz/flow-diagram-draw",
+      "tags": ["vivus", "gsap", "flow", "diagram", "process", "pipeline", "architecture", "svg", "draw"]
+    },
+    {
+      "id": "quote-fade",
+      "category": "quote",
+      "path": "blocks/quote/quote-fade",
+      "tags": ["quote", "italic", "attribution", "elegant", "quotation-mark"]
+    },
+    {
+      "id": "title-spring-basic",
+      "category": "title",
+      "path": "blocks/title/title-spring-basic",
+      "tags": ["spring", "basic", "universal", "accent-line", "subtitle", "blur-reveal"]
+    },
+    {
+      "id": "title-kinetic-gsap",
+      "category": "title",
+      "path": "blocks/title/title-kinetic-gsap",
+      "tags": ["gsap", "kinetic", "split-text", "rotation", "energetic", "bold", "stagger"]
+    },
+    {
+      "id": "title-gradient-sweep",
+      "category": "title",
+      "path": "blocks/title/title-gradient-sweep",
+      "tags": ["gsap", "gradient", "sweep", "modern", "premium", "blur-reveal"]
+    },
+    {
+      "id": "title-glitch-reveal",
+      "category": "title",
+      "path": "blocks/title/title-glitch-reveal",
+      "tags": ["glitch", "cyberpunk", "rgb-split", "edgy", "digital", "reveal"]
+    },
+    {
+      "id": "title-neon-flicker",
+      "category": "title",
+      "path": "blocks/title/title-neon-flicker",
+      "tags": ["neon", "glow", "flicker", "cyberpunk", "nightlife", "futuristic"]
+    },
+    {
+      "id": "transition-minimal",
+      "category": "transition",
+      "path": "blocks/transition/transition-minimal",
+      "tags": ["dots", "minimal", "section-break", "divider", "ripple"]
+    },
+    {
+      "id": "list-reveal-gsap",
+      "category": "list-reveal",
+      "path": "blocks/list-reveal/list-reveal-gsap",
+      "tags": ["gsap", "list", "stagger", "numbered", "icons", "steps", "tips"]
+    },
+    {
+      "id": "code-block-typewriter",
+      "category": "code-block",
+      "path": "blocks/code-block/code-block-typewriter",
+      "tags": ["gsap", "code", "typewriter", "syntax-highlight", "terminal", "developer", "line-numbers"]
+    },
+    {
+      "id": "comparison-split-gsap",
+      "category": "comparison",
+      "path": "blocks/comparison/comparison-split-gsap",
+      "tags": ["gsap", "comparison", "split-screen", "before-after", "versus", "wipe"]
+    },
+    {
+      "id": "image-showcase-gsap",
+      "category": "image-showcase",
+      "path": "blocks/image-showcase/image-showcase-gsap",
+      "tags": ["gsap", "image", "ken-burns", "zoom", "parallax", "overlay-text", "hero", "vignette"]
+    },
+    {
+      "id": "svg-draw-reveal",
+      "category": "custom",
+      "path": "blocks/custom/svg-draw-reveal",
+      "tags": ["vivus", "svg", "draw", "line-drawing", "reveal", "whiteboard", "hand-drawn"]
+    },
+    {
+      "id": "icon-grid-draw",
+      "category": "custom",
+      "path": "blocks/custom/icon-grid-draw",
+      "tags": ["vivus", "svg", "icons", "grid", "stagger", "features", "services", "draw"]
+    },
+    {
+      "id": "logo-reveal-particles",
+      "category": "logo-reveal",
+      "path": "blocks/logo-reveal/logo-reveal-particles",
+      "tags": ["particles", "converge", "logo", "glow", "reveal", "dramatic"]
+    },
+    {
+      "id": "logo-reveal-draw",
+      "category": "logo-reveal",
+      "path": "blocks/logo-reveal/logo-reveal-draw",
+      "tags": ["svg", "draw", "logo", "stroke", "fill", "elegant"]
+    },
+    {
+      "id": "countdown-flip",
+      "category": "countdown",
+      "path": "blocks/countdown/countdown-flip",
+      "tags": ["countdown", "flip", "3d", "timer", "gsap", "dramatic"]
+    },
+    {
+      "id": "testimonial-quote-card",
+      "category": "testimonial",
+      "path": "blocks/testimonial/testimonial-quote-card",
+      "tags": ["testimonial", "quote", "avatar", "rating", "stars", "glassmorphism"]
+    },
+    {
+      "id": "feature-grid-icon",
+      "category": "feature",
+      "path": "blocks/feature/feature-grid-icon",
+      "tags": ["feature", "grid", "icons", "gsap", "stagger", "cards"]
+    },
+    {
+      "id": "stats-counter-row",
+      "category": "stats",
+      "path": "blocks/stats/stats-counter-row",
+      "tags": ["stats", "counter", "kpi", "numbers", "trend", "row"]
+    },
+    {
+      "id": "pricing-table-slide",
+      "category": "pricing",
+      "path": "blocks/pricing/pricing-table-slide",
+      "tags": ["pricing", "table", "plans", "gsap", "slide", "highlight", "counter"]
+    },
+    {
+      "id": "team-profile-flip",
+      "category": "team",
+      "path": "blocks/team/team-profile-flip",
+      "tags": ["team", "profile", "3d-flip", "gsap", "avatar", "cards"]
+    },
+    {
+      "id": "social-proof-scroll",
+      "category": "social-proof",
+      "path": "blocks/social-proof/social-proof-scroll",
+      "tags": ["social-proof", "marquee", "scroll", "reviews", "testimonials"]
+    },
+    {
+      "id": "before-after-wipe",
+      "category": "before-after",
+      "path": "blocks/before-after/before-after-wipe",
+      "tags": ["before-after", "wipe", "comparison", "divider", "reveal"]
+    },
+    {
+      "id": "text-highlight-marker",
+      "category": "text-effect",
+      "path": "blocks/text-effect/text-highlight-marker",
+      "tags": ["text", "highlight", "marker", "annotation", "emphasis"]
+    }
+  ],
+  "assets": [],
+  "styles": [
+    {
+      "id": "brand-warm-cinematic",
+      "path": "styles/brand-warm-cinematic.json",
+      "tags": ["dramatic", "warm", "emotional", "elegant", "food", "restaurant", "luxury", "fashion"]
+    },
+    {
+      "id": "data-clean-professional",
+      "path": "styles/data-clean-professional.json",
+      "tags": ["professional", "clean", "informative", "finance", "analytics", "education", "saas", "corporate"]
+    },
+    {
+      "id": "tech-dark-energetic",
+      "path": "styles/tech-dark-energetic.json",
+      "tags": ["energetic", "modern", "professional", "tech", "saas", "developer", "ai", "startup"]
+    },
+    {
+      "id": "neon-cyberpunk",
+      "path": "styles/neon-cyberpunk.json",
+      "tags": ["neon", "cyberpunk", "edgy", "gaming", "music", "nightlife", "futuristic"]
+    },
+    {
+      "id": "minimal-zen",
+      "path": "styles/minimal-zen.json",
+      "tags": ["minimal", "zen", "calm", "elegant", "wellness", "lifestyle", "whitespace"]
+    },
+    {
+      "id": "gradient-dreamy",
+      "path": "styles/gradient-dreamy.json",
+      "tags": ["gradient", "dreamy", "pastel", "soft", "beauty", "fashion", "romantic"]
+    },
+    {
+      "id": "retro-film",
+      "path": "styles/retro-film.json",
+      "tags": ["retro", "film", "vintage", "sepia", "warm", "cinematic", "nostalgic"]
+    },
+    {
+      "id": "corporate-blue",
+      "path": "styles/corporate-blue.json",
+      "tags": ["corporate", "blue", "professional", "trustworthy", "enterprise", "finance"]
+    }
+  ],
+  "compositions": [
+    {
+      "id": "data-viz-story",
+      "path": "compositions/data-viz-story",
+      "tags": ["data", "dashboard", "instagram", "xiaohongshu", "metrics", "report", "square"]
+    },
+    {
+      "id": "explainer-standard",
+      "path": "compositions/explainer-standard",
+      "tags": ["explainer", "youtube", "bilibili", "educational", "tutorial"]
+    },
+    {
+      "id": "social-tips-short",
+      "path": "compositions/social-tips-short",
+      "tags": ["social", "tips", "tiktok", "douyin", "reels", "short", "listicle"]
+    },
+    {
+      "id": "product-launch-showcase",
+      "path": "compositions/product-launch-showcase",
+      "tags": ["product", "launch", "saas", "features", "showcase", "marketing"]
+    },
+    {
+      "id": "brand-story-cinematic",
+      "path": "compositions/brand-story-cinematic",
+      "tags": ["brand", "story", "cinematic", "emotional", "narrative", "corporate"]
+    },
+    {
+      "id": "data-report-dashboard",
+      "path": "compositions/data-report-dashboard",
+      "tags": ["data", "report", "dashboard", "analytics", "charts", "metrics"]
+    }
+  ]
+}

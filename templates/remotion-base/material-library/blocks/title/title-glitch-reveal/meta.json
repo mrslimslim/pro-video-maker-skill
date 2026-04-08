@@ -1,0 +1,31 @@
+{
+  "id": "title-glitch-reveal",
+  "name": "Glitch Reveal Title",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "title",
+  "tags": ["glitch", "cyberpunk", "rgb-split", "edgy", "digital", "reveal"],
+  "description": "Cyberpunk-style title that glitches into view with RGB color separation, random slice offsets, and hue distortion, then stabilizes. Ideal for tech, gaming, and edgy content.",
+  "contextMatch": {
+    "mood": ["edgy", "energetic", "digital", "chaotic", "dramatic"],
+    "industry": ["tech", "gaming", "cybersecurity", "music", "creative"],
+    "platform": ["douyin", "tiktok", "reels", "youtube"],
+    "contentType": ["hook", "social-short", "trailer", "gaming"]
+  },
+  "props": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": false },
+    "backgroundColor": { "type": "color", "default": "#0A0A0A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#FF006E" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 45, "maxFrames": 120, "defaultFrames": 75 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["neon-cyberpunk", "tech-dark-energetic"],
+  "compatibleTransitions": ["glitch-cut", "cut", "fade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

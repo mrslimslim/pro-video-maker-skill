@@ -1,0 +1,21 @@
+{
+  "id": "data-report-dashboard",
+  "name": "数据报告仪表盘模板",
+  "description": "75-second data report video with animated charts and counters. Title → key metric → pie chart → line chart → summary stats → CTA. Clean professional style.",
+  "platform": "instagram",
+  "aspectRatio": "1:1",
+  "resolution": { "width": 1080, "height": 1080 },
+  "fps": 30,
+  "durationSeconds": 75,
+  "totalFrames": 2250,
+  "style": "data-clean-professional",
+  "tags": ["data", "report", "dashboard", "analytics", "charts", "metrics"],
+  "bestFor": ["annual reports", "quarterly reviews", "analytics summaries", "KPI presentations"],
+  "contextMatch": {
+    "contentType": ["data-report", "analytics", "dashboard", "metrics"],
+    "platform": ["instagram", "xiaohongshu", "youtube"],
+    "duration": "45-90s"
+  },
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

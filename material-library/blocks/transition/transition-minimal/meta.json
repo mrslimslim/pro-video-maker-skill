@@ -1,0 +1,30 @@
+{
+  "id": "transition-minimal",
+  "name": "Minimal Transition",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "transition",
+  "tags": ["dots", "minimal", "section-break", "divider"],
+  "description": "Brief transition scene with animated bouncing dots and optional text. Used as a visual breather between content sections.",
+  "contextMatch": {
+    "mood": ["professional", "calm", "modern", "minimal"],
+    "industry": ["tech", "saas", "education", "marketing", "finance"],
+    "platform": ["douyin", "tiktok", "reels", "youtube", "bilibili", "instagram", "xiaohongshu"],
+    "contentType": ["section-breaks", "topic-changes", "pacing"]
+  },
+  "props": {
+    "text": { "type": "string", "required": false, "description": "Optional short transition text" },
+    "icon": { "type": "string", "required": false, "description": "Optional icon identifier" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 30, "maxFrames": 60, "defaultFrames": 45 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "compatibleStyles": ["kinetic-typography", "minimal-motion", "data-story", "flat-explainer"],
+  "compatibleTransitions": ["fade", "dissolve"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

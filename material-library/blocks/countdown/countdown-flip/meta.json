@@ -1,0 +1,30 @@
+{
+  "id": "countdown-flip",
+  "name": "Countdown — 3D Flip",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "countdown",
+  "tags": ["countdown", "flip", "3d", "gsap", "timer", "go"],
+  "description": "Large flip-style countdown from N to 1 with 3D rotateX motion (GSAP), blinking colon separators, finishing on GO!. Each step lasts 30 frames at 30fps.",
+  "contextMatch": {
+    "mood": ["energetic", "dramatic", "playful", "competitive"],
+    "industry": ["sports", "gaming", "fitness", "events", "marketing"],
+    "platform": ["youtube", "bilibili", "tiktok", "douyin", "instagram"],
+    "contentType": ["intros", "challenges", "launches", "live-events"]
+  },
+  "props": {
+    "from": { "type": "number", "default": 3, "description": "Starting number (counts down to 1)" },
+    "backgroundColor": { "type": "color", "default": "#020617" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#F472B6" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 90, "maxFrames": 360, "defaultFrames": 150 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook", "gsap"],
+  "compatibleStyles": ["neon-grid", "minimal-motion", "cinematic"],
+  "compatibleTransitions": ["cut", "glitch-cut", "fade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

@@ -1,0 +1,743 @@
+[
+  {
+    "id": "cinematic",
+    "name": "Cinematic",
+    "category": "content",
+    "keywords": ["film", "movie", "dramatic", "epic", "trailer", "documentary"],
+    "bestFor": ["brand storytelling", "product launch", "trailer", "documentary"],
+    "mood": "dramatic",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power3.inOut",
+      "stagger": 0.15,
+      "intensity": "moderate"
+    },
+    "effects": ["ken-burns-zoom", "fade", "light-leak", "film-grain"],
+    "transitions": ["dissolve", "fade", "crossfade"],
+    "colorMood": "dark with warm accents",
+    "avoid": ["fast cuts", "bouncy easing", "bright neon"]
+  },
+  {
+    "id": "kinetic-typography",
+    "name": "Kinetic Typography",
+    "category": "social",
+    "keywords": ["text", "words", "typography", "bold", "quote", "tips", "facts"],
+    "bestFor": ["social shorts", "quotes", "tips", "listicles", "educational"],
+    "mood": "energetic",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.04,
+      "intensity": "high"
+    },
+    "effects": ["split-text", "word-reveal", "bounce-in", "typewriter"],
+    "transitions": ["slide-up", "slide-left", "push"],
+    "colorMood": "high contrast, bold primary",
+    "avoid": ["slow fades", "subtle motion", "complex backgrounds"]
+  },
+  {
+    "id": "data-story",
+    "name": "Data Story",
+    "category": "data",
+    "keywords": ["data", "chart", "graph", "statistics", "numbers", "analytics", "dashboard"],
+    "bestFor": ["data visualization", "reports", "analytics", "infographics"],
+    "mood": "professional",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["chart-build", "counter-animation", "progress-bar", "draw-line"],
+    "transitions": ["fade", "slide-left", "dissolve"],
+    "colorMood": "clean, blue/teal accent on white/dark",
+    "avoid": ["flashy effects", "bouncy easing", "too many colors"]
+  },
+  {
+    "id": "minimal-motion",
+    "name": "Minimal Motion",
+    "category": "marketing",
+    "keywords": ["minimal", "clean", "elegant", "premium", "luxury", "simple"],
+    "bestFor": ["premium brands", "luxury products", "corporate", "SaaS"],
+    "mood": "calm",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "expo.out",
+      "stagger": 0.12,
+      "intensity": "subtle"
+    },
+    "effects": ["fade-in", "slide-up-subtle", "scale-in"],
+    "transitions": ["fade", "dissolve", "crossfade"],
+    "colorMood": "muted, neutral with single accent",
+    "avoid": ["bouncy effects", "glitch", "fast cuts", "neon"]
+  },
+  {
+    "id": "social-punch",
+    "name": "Social Punch",
+    "category": "social",
+    "keywords": ["social", "viral", "tiktok", "reels", "shorts", "hook", "attention"],
+    "bestFor": ["TikTok", "Reels", "YouTube Shorts", "social hooks"],
+    "mood": "energetic",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.03,
+      "intensity": "high"
+    },
+    "effects": ["zoom-in-fast", "shake", "bounce-in", "scale-pop"],
+    "transitions": ["slide-up", "zoom", "push", "cut"],
+    "colorMood": "vibrant, saturated, high contrast",
+    "avoid": ["slow fades", "subtle motion", "corporate feel"]
+  },
+  {
+    "id": "parallax-depth",
+    "name": "Parallax Depth",
+    "category": "content",
+    "keywords": ["parallax", "depth", "layers", "2.5d", "immersive", "landscape"],
+    "bestFor": ["storytelling", "travel", "nature", "immersive content"],
+    "mood": "immersive",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power2.inOut",
+      "stagger": 0.1,
+      "intensity": "moderate"
+    },
+    "effects": ["parallax-layers", "depth-blur", "ken-burns-zoom", "float"],
+    "transitions": ["parallax-slide", "dissolve", "fade"],
+    "colorMood": "natural, earthy or atmospheric",
+    "avoid": ["flat design", "fast cuts", "text-heavy"]
+  },
+  {
+    "id": "product-showcase",
+    "name": "Product Showcase",
+    "category": "marketing",
+    "keywords": ["product", "showcase", "demo", "unboxing", "feature", "app"],
+    "bestFor": ["product launches", "app demos", "feature highlights", "e-commerce"],
+    "mood": "professional",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power3.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["float", "rotate-3d", "scale-in", "spotlight"],
+    "transitions": ["slide-left", "zoom", "morph"],
+    "colorMood": "clean background, product-color accent",
+    "avoid": ["busy backgrounds", "too many effects", "text-heavy"]
+  },
+  {
+    "id": "glitch",
+    "name": "Glitch",
+    "category": "creative",
+    "keywords": ["glitch", "cyber", "hack", "digital", "error", "distortion", "cyberpunk"],
+    "bestFor": ["tech content", "gaming", "cyberpunk", "hacking", "digital art"],
+    "mood": "edgy",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.02,
+      "intensity": "high"
+    },
+    "effects": ["glitch-text", "rgb-split", "noise-grain", "scan-lines", "pixel-sort"],
+    "transitions": ["glitch-cut", "pixel", "distortion"],
+    "colorMood": "dark with neon accents (cyan, magenta, green)",
+    "avoid": ["soft pastels", "slow easing", "organic shapes"]
+  },
+  {
+    "id": "neon-pulse",
+    "name": "Neon Pulse",
+    "category": "marketing",
+    "keywords": ["neon", "glow", "dark", "night", "club", "music", "futuristic"],
+    "bestFor": ["nightlife", "music", "gaming", "tech", "futuristic"],
+    "mood": "energetic",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.05,
+      "intensity": "high"
+    },
+    "effects": ["neon-glow", "pulse", "flicker", "light-sweep"],
+    "transitions": ["fade", "glow-wipe", "zoom"],
+    "colorMood": "dark (#0a0a0a) with neon accents",
+    "avoid": ["pastels", "natural colors", "daylight themes"]
+  },
+  {
+    "id": "infographic-motion",
+    "name": "Infographic Motion",
+    "category": "data",
+    "keywords": ["infographic", "icon", "stats", "comparison", "process", "steps"],
+    "bestFor": ["educational", "how-it-works", "comparisons", "process flows"],
+    "mood": "professional",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.06,
+      "intensity": "moderate"
+    },
+    "effects": ["icon-pop", "draw-line", "counter-animation", "progress-bar"],
+    "transitions": ["slide-up", "slide-left", "fade"],
+    "colorMood": "clean, 3-4 distinct colors for data encoding",
+    "avoid": ["complex animations", "dark themes", "text-heavy"]
+  },
+  {
+    "id": "comic-manga",
+    "name": "Comic / Manga",
+    "category": "creative",
+    "keywords": ["comic", "manga", "anime", "cartoon", "panel", "illustration"],
+    "bestFor": ["storytelling", "entertainment", "gaming", "youth content"],
+    "mood": "playful",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "elastic.out",
+      "stagger": 0.05,
+      "intensity": "high"
+    },
+    "effects": ["panel-reveal", "speech-bubble", "action-lines", "zoom-impact"],
+    "transitions": ["panel-wipe", "slide-left", "zoom"],
+    "colorMood": "bold, saturated, black outlines",
+    "avoid": ["corporate feel", "muted colors", "slow pacing"]
+  },
+  {
+    "id": "retro-vhs",
+    "name": "Retro VHS",
+    "category": "creative",
+    "keywords": ["retro", "vhs", "80s", "90s", "vintage", "nostalgia", "tape"],
+    "bestFor": ["nostalgia content", "music", "fashion", "entertainment"],
+    "mood": "nostalgic",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["scan-lines", "tracking-error", "color-bleed", "noise-grain"],
+    "transitions": ["glitch-cut", "fade", "dissolve"],
+    "colorMood": "warm, desaturated, slight color shift",
+    "avoid": ["clean modern look", "sharp edges", "minimalism"]
+  },
+  {
+    "id": "gradient-flow",
+    "name": "Gradient Flow",
+    "category": "marketing",
+    "keywords": ["gradient", "mesh", "aurora", "modern", "fluid", "colorful"],
+    "bestFor": ["SaaS", "app marketing", "creative agencies", "modern brands"],
+    "mood": "modern",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.inOut",
+      "stagger": 0.1,
+      "intensity": "moderate"
+    },
+    "effects": ["gradient-shift", "mesh-morph", "float", "fade-in"],
+    "transitions": ["dissolve", "crossfade", "morph"],
+    "colorMood": "multi-color gradients, soft blending",
+    "avoid": ["solid backgrounds", "harsh edges", "monochrome"]
+  },
+  {
+    "id": "tutorial-step",
+    "name": "Tutorial Step",
+    "category": "data",
+    "keywords": ["tutorial", "howto", "guide", "steps", "learn", "course", "education"],
+    "bestFor": ["tutorials", "how-to videos", "courses", "documentation"],
+    "mood": "professional",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.06,
+      "intensity": "subtle"
+    },
+    "effects": ["step-number", "highlight-box", "arrow-pointer", "code-typewriter"],
+    "transitions": ["slide-left", "fade", "slide-up"],
+    "colorMood": "clean, high readability, subtle accent",
+    "avoid": ["flashy effects", "dark themes", "complex animations"]
+  },
+  {
+    "id": "whiteboard",
+    "name": "Whiteboard",
+    "category": "data",
+    "keywords": ["whiteboard", "sketch", "draw", "handwritten", "explain", "doodle"],
+    "bestFor": ["explanations", "education", "brainstorming", "concepts"],
+    "mood": "friendly",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.1,
+      "intensity": "subtle"
+    },
+    "effects": ["draw-line", "handwrite", "sketch-reveal", "doodle"],
+    "transitions": ["fade", "wipe-right", "dissolve"],
+    "colorMood": "white background, dark strokes, accent highlights",
+    "avoid": ["3D effects", "dark themes", "complex gradients"]
+  },
+  {
+    "id": "organic-flow",
+    "name": "Organic Flow",
+    "category": "creative",
+    "keywords": ["organic", "fluid", "nature", "flow", "water", "biomorphic", "wellness"],
+    "bestFor": ["wellness", "nature", "sustainability", "beauty", "spa"],
+    "mood": "calm",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power2.inOut",
+      "stagger": 0.12,
+      "intensity": "subtle"
+    },
+    "effects": ["blob-morph", "wave", "float", "gentle-scale"],
+    "transitions": ["dissolve", "morph", "fade"],
+    "colorMood": "earthy, natural greens/browns, soft pastels",
+    "avoid": ["sharp edges", "glitch", "neon", "fast cuts"]
+  },
+  {
+    "id": "meme-style",
+    "name": "Meme Style",
+    "category": "social",
+    "keywords": ["meme", "funny", "comedy", "viral", "reaction", "trend"],
+    "bestFor": ["memes", "comedy", "reactions", "trending content"],
+    "mood": "playful",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "bounce.out",
+      "stagger": 0.02,
+      "intensity": "high"
+    },
+    "effects": ["impact-text", "zoom-in-fast", "shake", "bounce-in"],
+    "transitions": ["cut", "zoom", "slide-up"],
+    "colorMood": "bold, white text with black stroke on vivid background",
+    "avoid": ["elegance", "subtle motion", "corporate"]
+  },
+  {
+    "id": "vertical-snap",
+    "name": "Vertical Snap",
+    "category": "social",
+    "keywords": ["vertical", "9:16", "mobile", "swipe", "snap", "story"],
+    "bestFor": ["Instagram Stories", "TikTok", "YouTube Shorts", "Snapchat"],
+    "mood": "energetic",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.04,
+      "intensity": "high"
+    },
+    "effects": ["swipe-reveal", "stack-cards", "bounce-in", "sticker-pop"],
+    "transitions": ["slide-up", "push-up", "zoom"],
+    "colorMood": "vibrant, mobile-optimized contrast",
+    "avoid": ["landscape composition", "small text", "slow pacing"]
+  },
+  {
+    "id": "documentary",
+    "name": "Documentary",
+    "category": "content",
+    "keywords": ["documentary", "journalism", "news", "investigation", "report"],
+    "bestFor": ["documentaries", "news", "journalism", "reports"],
+    "mood": "serious",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power2.out",
+      "stagger": 0.1,
+      "intensity": "subtle"
+    },
+    "effects": ["ken-burns-zoom", "lower-third", "caption", "timeline-bar"],
+    "transitions": ["dissolve", "fade", "crossfade"],
+    "colorMood": "muted, documentary palette, earth tones",
+    "avoid": ["flashy effects", "neon", "bouncy", "glitch"]
+  },
+  {
+    "id": "storytelling-flow",
+    "name": "Storytelling Flow",
+    "category": "content",
+    "keywords": ["story", "narrative", "journey", "timeline", "brand", "mission"],
+    "bestFor": ["brand stories", "about us", "journey", "case studies"],
+    "mood": "emotional",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power3.inOut",
+      "stagger": 0.1,
+      "intensity": "moderate"
+    },
+    "effects": ["fade-in", "parallax-layers", "text-reveal", "photo-frame"],
+    "transitions": ["dissolve", "crossfade", "parallax-slide"],
+    "colorMood": "warm, inviting, brand-aligned",
+    "avoid": ["harsh cuts", "glitch", "cold colors"]
+  },
+  {
+    "id": "glassmorphic-motion",
+    "name": "Glassmorphic Motion",
+    "category": "marketing",
+    "keywords": ["glass", "blur", "frost", "transparent", "modern", "ios", "saas"],
+    "bestFor": ["SaaS", "fintech", "iOS apps", "modern dashboards"],
+    "mood": "modern",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "normal",
+      "easing": "expo.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["glass-card", "blur-reveal", "float", "subtle-glow"],
+    "transitions": ["fade", "dissolve", "slide-up"],
+    "colorMood": "light translucent panels on gradient background",
+    "avoid": ["solid backgrounds", "harsh colors", "retro feel"]
+  },
+  {
+    "id": "brutalist-motion",
+    "name": "Brutalist Motion",
+    "category": "creative",
+    "keywords": ["brutalist", "raw", "bold", "stark", "anti-design", "punk"],
+    "bestFor": ["art", "fashion", "avant-garde", "indie", "portfolios"],
+    "mood": "edgy",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.03,
+      "intensity": "high"
+    },
+    "effects": ["impact-text", "hard-cut", "oversize-type", "raw-layout"],
+    "transitions": ["cut", "slide-left", "push"],
+    "colorMood": "black/white with single bold accent",
+    "avoid": ["gradients", "soft shadows", "rounded corners"]
+  },
+  {
+    "id": "3d-showcase",
+    "name": "3D Showcase",
+    "category": "marketing",
+    "keywords": ["3d", "three", "dimensional", "render", "rotation", "spatial"],
+    "bestFor": ["product demos", "architecture", "automotive", "tech hardware"],
+    "mood": "premium",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power3.inOut",
+      "stagger": 0.12,
+      "intensity": "moderate"
+    },
+    "effects": ["rotate-3d", "orbit-camera", "depth-of-field", "environment-map"],
+    "transitions": ["morph", "dissolve", "zoom"],
+    "colorMood": "dark or neutral studio backdrop, product colors",
+    "avoid": ["2D flat design", "text-heavy", "fast cuts"]
+  },
+  {
+    "id": "countdown-timer",
+    "name": "Countdown Timer",
+    "category": "social",
+    "keywords": ["countdown", "timer", "launch", "event", "reveal", "anticipation"],
+    "bestFor": ["product launches", "event teasers", "reveals", "sales"],
+    "mood": "anticipatory",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.06,
+      "intensity": "moderate"
+    },
+    "effects": ["counter-animation", "pulse", "scale-pop", "particle-burst"],
+    "transitions": ["zoom", "fade", "slide-up"],
+    "colorMood": "dark with energetic accent",
+    "avoid": ["calm pacing", "muted colors"]
+  },
+  {
+    "id": "split-screen",
+    "name": "Split Screen",
+    "category": "content",
+    "keywords": ["split", "comparison", "versus", "before-after", "side-by-side"],
+    "bestFor": ["comparisons", "before/after", "A/B tests", "versus content"],
+    "mood": "informative",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["split-reveal", "wipe-compare", "slide-divide"],
+    "transitions": ["wipe-horizontal", "slide-left", "push"],
+    "colorMood": "contrasting halves, clear separation",
+    "avoid": ["complex layouts", "too many splits", "small text"]
+  },
+  {
+    "id": "particle-system",
+    "name": "Particle System",
+    "category": "creative",
+    "keywords": ["particle", "stars", "snow", "confetti", "sparkle", "magic"],
+    "bestFor": ["celebrations", "magic", "sci-fi", "festive", "awards"],
+    "mood": "magical",
+    "rhythm": "calm",
+    "tokens": {
+      "duration": "normal",
+      "easing": "linear",
+      "stagger": 0,
+      "intensity": "moderate"
+    },
+    "effects": ["particle-rain", "confetti", "sparkle", "star-field"],
+    "transitions": ["dissolve", "fade", "particle-wipe"],
+    "colorMood": "dark base with luminous particles",
+    "avoid": ["solid backgrounds", "text-heavy", "corporate"]
+  },
+  {
+    "id": "magazine-editorial",
+    "name": "Magazine Editorial",
+    "category": "content",
+    "keywords": ["magazine", "editorial", "fashion", "lifestyle", "grid", "layout"],
+    "bestFor": ["fashion", "lifestyle", "luxury", "editorial content"],
+    "mood": "elegant",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "expo.out",
+      "stagger": 0.1,
+      "intensity": "subtle"
+    },
+    "effects": ["image-reveal", "text-reveal", "grid-layout", "mask-wipe"],
+    "transitions": ["crossfade", "wipe-horizontal", "dissolve"],
+    "colorMood": "neutral, high-fashion, monochrome + accent",
+    "avoid": ["bouncy effects", "neon", "cluttered layouts"]
+  },
+  {
+    "id": "music-visualizer",
+    "name": "Music Visualizer",
+    "category": "creative",
+    "keywords": ["music", "audio", "visualizer", "waveform", "beats", "rhythm"],
+    "bestFor": ["music videos", "podcast promos", "audio visualizations"],
+    "mood": "rhythmic",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.02,
+      "intensity": "high"
+    },
+    "effects": ["waveform", "spectrum-bars", "pulse-ring", "beat-sync"],
+    "transitions": ["cut", "glitch-cut", "fade"],
+    "colorMood": "dark with vibrant reactive colors",
+    "avoid": ["static elements", "slow pacing", "text-heavy"]
+  },
+  {
+    "id": "bento-grid-motion",
+    "name": "Bento Grid Motion",
+    "category": "marketing",
+    "keywords": ["bento", "grid", "cards", "features", "modular", "apple"],
+    "bestFor": ["feature showcases", "product pages", "app stores", "SaaS"],
+    "mood": "modern",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power3.out",
+      "stagger": 0.06,
+      "intensity": "moderate"
+    },
+    "effects": ["card-pop", "stagger-reveal", "scale-in", "icon-bounce"],
+    "transitions": ["fade", "slide-up", "scale"],
+    "colorMood": "light/dark with clear card separation",
+    "avoid": ["overlapping elements", "complex backgrounds"]
+  },
+  {
+    "id": "ai-native",
+    "name": "AI Native",
+    "category": "marketing",
+    "keywords": ["ai", "machine-learning", "neural", "chatbot", "copilot", "automation"],
+    "bestFor": ["AI products", "tech demos", "chatbot promos", "SaaS AI features"],
+    "mood": "futuristic",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.06,
+      "intensity": "moderate"
+    },
+    "effects": ["typing-cursor", "stream-text", "neural-network", "pulse-dot"],
+    "transitions": ["fade", "slide-up", "morph"],
+    "colorMood": "dark purple/blue gradients, luminous accents",
+    "avoid": ["retro feel", "organic shapes", "warm colors"]
+  },
+  {
+    "id": "isometric-world",
+    "name": "Isometric World",
+    "category": "data",
+    "keywords": ["isometric", "3d-flat", "illustration", "world", "city", "map"],
+    "bestFor": ["tech explainers", "process flows", "infrastructure", "gaming"],
+    "mood": "playful",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.08,
+      "intensity": "moderate"
+    },
+    "effects": ["build-up", "pop-in", "float", "path-draw"],
+    "transitions": ["slide-left", "fade", "zoom"],
+    "colorMood": "flat, bright, illustration-style",
+    "avoid": ["realism", "dark themes", "complex textures"]
+  },
+  {
+    "id": "dark-luxe",
+    "name": "Dark Luxe",
+    "category": "marketing",
+    "keywords": ["dark", "luxury", "premium", "gold", "exclusive", "high-end"],
+    "bestFor": ["luxury brands", "jewelry", "watches", "premium services"],
+    "mood": "premium",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "expo.out",
+      "stagger": 0.12,
+      "intensity": "subtle"
+    },
+    "effects": ["gold-shimmer", "subtle-glow", "text-reveal", "light-sweep"],
+    "transitions": ["dissolve", "fade", "crossfade"],
+    "colorMood": "deep black (#0a0a0a) with gold (#D4AF37) or silver",
+    "avoid": ["bright colors", "bouncy effects", "casual feel"]
+  },
+  {
+    "id": "flat-explainer",
+    "name": "Flat Explainer",
+    "category": "data",
+    "keywords": ["flat", "explainer", "animation", "character", "illustration", "simple"],
+    "bestFor": ["explainer videos", "onboarding", "product tours", "education"],
+    "mood": "friendly",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.06,
+      "intensity": "moderate"
+    },
+    "effects": ["slide-in", "pop-in", "path-draw", "icon-bounce"],
+    "transitions": ["slide-left", "slide-up", "fade"],
+    "colorMood": "bright, friendly, limited palette",
+    "avoid": ["dark themes", "complex 3D", "realistic imagery"]
+  },
+  {
+    "id": "photo-montage",
+    "name": "Photo Montage",
+    "category": "content",
+    "keywords": ["photo", "gallery", "slideshow", "memories", "collage", "album"],
+    "bestFor": ["photo slideshows", "memories", "travel", "events", "weddings"],
+    "mood": "emotional",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power2.inOut",
+      "stagger": 0.15,
+      "intensity": "subtle"
+    },
+    "effects": ["ken-burns-zoom", "photo-frame", "gentle-scale", "light-leak"],
+    "transitions": ["crossfade", "dissolve", "slide-left"],
+    "colorMood": "warm, slightly desaturated, nostalgic",
+    "avoid": ["harsh effects", "glitch", "neon", "fast cuts"]
+  },
+  {
+    "id": "code-demo",
+    "name": "Code Demo",
+    "category": "data",
+    "keywords": ["code", "programming", "developer", "terminal", "api", "tech"],
+    "bestFor": ["dev tutorials", "API demos", "code walkthroughs", "tech content"],
+    "mood": "technical",
+    "rhythm": "normal",
+    "tokens": {
+      "duration": "normal",
+      "easing": "power2.out",
+      "stagger": 0.04,
+      "intensity": "moderate"
+    },
+    "effects": ["code-typewriter", "syntax-highlight", "terminal-type", "cursor-blink"],
+    "transitions": ["slide-left", "fade", "slide-up"],
+    "colorMood": "dark editor theme (One Dark / Dracula / GitHub Dark)",
+    "avoid": ["bright backgrounds", "fancy effects", "non-monospace fonts"]
+  },
+  {
+    "id": "y2k-aesthetic",
+    "name": "Y2K Aesthetic",
+    "category": "creative",
+    "keywords": ["y2k", "2000s", "early-internet", "chrome", "futuristic-retro"],
+    "bestFor": ["fashion", "Gen Z content", "music", "pop culture"],
+    "mood": "playful",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "elastic.out",
+      "stagger": 0.04,
+      "intensity": "high"
+    },
+    "effects": ["chrome-text", "star-sparkle", "butterfly", "iridescent"],
+    "transitions": ["zoom", "slide-left", "glitch-cut"],
+    "colorMood": "chrome, pink, baby blue, iridescent",
+    "avoid": ["muted tones", "minimalism", "corporate"]
+  },
+  {
+    "id": "cyberpunk-ui",
+    "name": "Cyberpunk UI",
+    "category": "creative",
+    "keywords": ["cyberpunk", "hud", "sci-fi", "futuristic", "neon", "matrix"],
+    "bestFor": ["gaming", "sci-fi", "tech", "hacking", "futuristic"],
+    "mood": "intense",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power2.out",
+      "stagger": 0.03,
+      "intensity": "high"
+    },
+    "effects": ["hud-overlay", "scan-line", "data-stream", "neon-border"],
+    "transitions": ["glitch-cut", "zoom", "slide-left"],
+    "colorMood": "dark cyan/magenta/yellow on black",
+    "avoid": ["soft colors", "organic shapes", "slow pacing"]
+  },
+  {
+    "id": "watercolor-paint",
+    "name": "Watercolor Paint",
+    "category": "creative",
+    "keywords": ["watercolor", "paint", "art", "brush", "artistic", "handmade"],
+    "bestFor": ["art", "wedding", "invitation", "lifestyle", "handmade brands"],
+    "mood": "artistic",
+    "rhythm": "slow",
+    "tokens": {
+      "duration": "slow",
+      "easing": "power2.inOut",
+      "stagger": 0.12,
+      "intensity": "subtle"
+    },
+    "effects": ["paint-spread", "brush-stroke-reveal", "bleed", "texture-overlay"],
+    "transitions": ["dissolve", "paint-wipe", "fade"],
+    "colorMood": "soft, transparent, watercolor washes",
+    "avoid": ["sharp edges", "glitch", "digital feel", "neon"]
+  },
+  {
+    "id": "sports-energy",
+    "name": "Sports Energy",
+    "category": "social",
+    "keywords": ["sports", "fitness", "gym", "energy", "action", "athletic"],
+    "bestFor": ["sports highlights", "fitness", "gym promos", "action content"],
+    "mood": "intense",
+    "rhythm": "upbeat",
+    "tokens": {
+      "duration": "fast",
+      "easing": "power3.out",
+      "stagger": 0.03,
+      "intensity": "high"
+    },
+    "effects": ["zoom-in-fast", "shake", "speed-lines", "impact-flash"],
+    "transitions": ["zoom", "push", "slide-left"],
+    "colorMood": "dark with energetic red/orange/electric blue",
+    "avoid": ["calm pacing", "pastels", "elegant feel"]
+  }
+]

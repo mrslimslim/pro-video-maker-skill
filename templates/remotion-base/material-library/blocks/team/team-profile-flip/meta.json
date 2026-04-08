@@ -1,0 +1,35 @@
+{
+  "id": "team-profile-flip",
+  "name": "Team Profile Flip",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "team",
+  "tags": ["team", "people", "3d", "flip", "gsap", "stagger", "cards"],
+  "description": "Member cards in a row with 3D Y-axis flip: front shows colored avatar and name; back shows role and optional bio. Perspective and backface visibility for a clean reveal.",
+  "contextMatch": {
+    "mood": ["warm", "professional", "human", "trust"],
+    "industry": ["agency", "saas", "consulting", "creative", "hr"],
+    "platform": ["youtube", "linkedin", "bilibili", "website-embed"],
+    "contentType": ["about-us", "team-intro", "culture", "pitch"]
+  },
+  "props": {
+    "members": {
+      "type": "array",
+      "required": true,
+      "description": "Team members with name, role, avatar color, optional bio on back",
+      "items": { "name": "string", "role": "string", "color": "string", "bio": "string?" }
+    },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#818CF8" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["editorial", "corporate", "storytelling-flow"],
+  "compatibleTransitions": ["fade", "dissolve", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

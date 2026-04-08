@@ -1,0 +1,32 @@
+{
+  "id": "list-reveal-gsap",
+  "name": "GSAP List Reveal",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "list-reveal",
+  "tags": ["gsap", "list", "stagger", "numbered", "icons", "steps", "tips"],
+  "description": "Numbered or icon list with GSAP stagger reveal. Each item slides in from the left with a scale-pop number badge. Ideal for tips, features, steps, and top-N lists.",
+  "contextMatch": {
+    "mood": ["energetic", "professional", "modern", "playful"],
+    "industry": ["tech", "education", "marketing", "social", "saas"],
+    "platform": ["douyin", "tiktok", "reels", "youtube", "bilibili", "instagram"],
+    "contentType": ["tips", "top-N", "features", "steps", "listicle"]
+  },
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Optional heading above list" },
+    "items": { "type": "string[]", "required": true, "description": "Array of list item strings" },
+    "numbered": { "type": "boolean", "default": true, "description": "Show number badges" },
+    "backgroundColor": { "type": "color", "default": "#0F172A" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 150, "maxFrames": 360, "defaultFrames": 240 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["kinetic-typography", "flat-explainer", "tutorial-step", "social-punch"],
+  "compatibleTransitions": ["slide-up", "slide-left", "fade"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

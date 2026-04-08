@@ -1,0 +1,32 @@
+{
+  "id": "image-showcase-gsap",
+  "name": "GSAP Image Showcase",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "image-showcase",
+  "tags": ["gsap", "image", "ken-burns", "zoom", "parallax", "overlay-text", "hero"],
+  "description": "Full-screen image with GSAP-powered Ken Burns effect (slow zoom + pan) and dark gradient overlay with text sliding up from bottom. Cinematic reveal for product images, photos, and hero shots.",
+  "contextMatch": {
+    "mood": ["cinematic", "dramatic", "elegant", "immersive"],
+    "industry": ["travel", "food", "luxury", "fashion", "nature", "photography"],
+    "platform": ["youtube", "bilibili", "instagram", "xiaohongshu"],
+    "contentType": ["product-images", "photos", "hero-shots", "storytelling"]
+  },
+  "props": {
+    "imageSrc": { "type": "string", "required": true, "description": "Image path (use staticFile)" },
+    "overlayText": { "type": "string", "required": false, "description": "Text overlay on image" },
+    "overlaySubtext": { "type": "string", "required": false, "description": "Subtext below overlay" },
+    "textColor": { "type": "color", "default": "#FFFFFF" },
+    "accentColor": { "type": "color", "default": "#6366F1" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "zoomIntensity": { "type": "number", "default": 0.15, "description": "Ken Burns zoom amount (0.1-0.3)" }
+  },
+  "duration": { "minFrames": 90, "maxFrames": 180, "defaultFrames": 150 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": ["useGsapTimeline hook"],
+  "compatibleStyles": ["cinematic", "parallax-depth", "photo-montage", "storytelling-flow"],
+  "compatibleTransitions": ["dissolve", "fade", "crossfade", "ken-burns"],
+  "createdAt": "2026-04-06",
+  "source": "seed"
+}

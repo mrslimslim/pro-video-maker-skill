@@ -1,0 +1,88 @@
+{
+  "id": "explainer-standard",
+  "style": "data-clean-professional",
+  "sequence": [
+    {
+      "block": "title-spring-basic",
+      "role": "hook",
+      "durationFrames": 120,
+      "props": {
+        "title": "{{hookTitle}}",
+        "subtitle": "{{hookSubtitle}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "content-bullet-stagger",
+      "role": "problem",
+      "durationFrames": 240,
+      "props": {
+        "heading": "{{problemTitle}}",
+        "body": "{{problemBody}}",
+        "layout": "centered"
+      },
+      "transition": "slide-left"
+    },
+    {
+      "block": "content-bullet-stagger",
+      "role": "solution",
+      "durationFrames": 240,
+      "props": {
+        "heading": "{{solutionTitle}}",
+        "body": "{{solutionBody}}",
+        "bulletPoints": "{{solutionPoints}}"
+      },
+      "transition": "slide-left"
+    },
+    {
+      "block": "content-bullet-stagger",
+      "role": "detail",
+      "repeat": "{{detailCount}}",
+      "durationFrames": 240,
+      "props": {
+        "heading": "{{details[i].title}}",
+        "body": "{{details[i].body}}"
+      },
+      "transition": "slide-left"
+    },
+    {
+      "block": "data-chart-build",
+      "role": "stats",
+      "durationFrames": 210,
+      "props": {
+        "heading": "{{statsTitle}}",
+        "vizType": "stat-grid",
+        "stats": "{{statsData}}"
+      },
+      "transition": "fade"
+    },
+    {
+      "block": "cta-bounce",
+      "role": "closing",
+      "durationFrames": 150,
+      "props": {
+        "headline": "{{ctaText}}",
+        "subtext": "{{ctaSubtext}}",
+        "buttonText": "{{ctaButton}}"
+      },
+      "transition": null
+    }
+  ],
+  "variables": {
+    "hookTitle": { "type": "string", "description": "Opening question or hook" },
+    "hookSubtitle": { "type": "string", "description": "Subtitle for context" },
+    "problemTitle": { "type": "string", "description": "Problem statement heading" },
+    "problemBody": { "type": "string", "description": "Problem explanation" },
+    "solutionTitle": { "type": "string", "description": "Solution heading" },
+    "solutionBody": { "type": "string", "description": "Solution explanation" },
+    "solutionPoints": { "type": "string[]", "description": "Key solution bullet points" },
+    "detailCount": { "type": "number", "description": "Number of detail sections", "default": 2 },
+    "details": { "type": "array", "description": "Detail sections: {title, body}[]" },
+    "statsTitle": { "type": "string", "description": "Stats section heading" },
+    "statsData": { "type": "array", "description": "Stats: {label, value, suffix}[]" },
+    "ctaText": { "type": "string", "description": "CTA headline" },
+    "ctaSubtext": { "type": "string", "description": "CTA supporting text" },
+    "ctaButton": { "type": "string", "description": "CTA button label" }
+  },
+  "notes": "Total ~1800 frames at 30fps = 60s. Adjust detail count and per-block duration to fit. problem+solution can be merged for shorter videos."
+}

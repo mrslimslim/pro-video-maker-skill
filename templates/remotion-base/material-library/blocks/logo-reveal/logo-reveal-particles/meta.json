@@ -1,0 +1,31 @@
+{
+  "id": "logo-reveal-particles",
+  "name": "Logo Reveal — Particles",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "logo-reveal",
+  "tags": ["logo", "particles", "converge", "glow", "brand", "intro"],
+  "description": "Scattered particles converge toward the center to reveal logo text, then a subtle glow pulse stabilizes the mark. Strong for openers and brand moments.",
+  "contextMatch": {
+    "mood": ["energetic", "dramatic", "futuristic", "playful"],
+    "industry": ["tech", "gaming", "marketing", "media", "startups"],
+    "platform": ["youtube", "bilibili", "tiktok", "douyin", "instagram"],
+    "contentType": ["intros", "logo-stings", "brand", "trailers"]
+  },
+  "props": {
+    "logoText": { "type": "string", "required": true, "description": "Logo or wordmark text" },
+    "backgroundColor": { "type": "color", "default": "#030712" },
+    "textColor": { "type": "color", "default": "#F9FAFB" },
+    "accentColor": { "type": "color", "default": "#22D3EE" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "particleCount": { "type": "number", "default": 60, "description": "Number of particle dots" }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 240, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["cinematic", "minimal-motion", "neon-grid", "storytelling-flow"],
+  "compatibleTransitions": ["fade", "dissolve", "glitch-cut"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "title-neon-flicker",
+  "name": "Neon Flicker Title",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "title",
+  "tags": ["neon", "glow", "flicker", "cyberpunk", "nightlife", "futuristic"],
+  "description": "Neon sign-inspired title that flickers to life with a realistic power-on sequence, then breathes with a subtle glow pulse. Multi-layered text-shadow creates depth.",
+  "contextMatch": {
+    "mood": ["energetic", "futuristic", "dramatic", "nightlife"],
+    "industry": ["gaming", "music", "nightlife", "tech", "entertainment"],
+    "platform": ["douyin", "tiktok", "reels", "youtube", "bilibili"],
+    "contentType": ["hook", "trailer", "social-short", "music-video", "brand"]
+  },
+  "props": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string", "required": false },
+    "backgroundColor": { "type": "color", "default": "#0A0A0A" },
+    "textColor": { "type": "color", "default": "#FFFFFF" },
+    "glowColor": { "type": "color", "default": "#22D3EE" },
+    "fontFamily": { "type": "string", "default": "Inter" }
+  },
+  "duration": { "minFrames": 60, "maxFrames": 150, "defaultFrames": 90 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["neon-cyberpunk", "tech-dark-energetic"],
+  "compatibleTransitions": ["fade", "glitch-cut", "color-flash"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

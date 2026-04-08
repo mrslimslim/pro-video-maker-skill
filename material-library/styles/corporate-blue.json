@@ -1,0 +1,39 @@
+{
+  "id": "corporate-blue",
+  "name": "商务蓝",
+  "description": "Professional navy blue foundation with clean white surfaces and sky blue accents. Moderate animation speed with steady, trustworthy pacing. Best for corporate, finance, consulting, and enterprise content.",
+  "palette": {
+    "primary": "#1A365D",
+    "secondary": "#2B6CB0",
+    "accent": "#63B3ED",
+    "background": "#FFFFFF",
+    "surface": "#F7FAFC",
+    "text": "#1A202C",
+    "textSecondary": "#718096"
+  },
+  "typography": {
+    "heading": "Inter",
+    "body": "Inter",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 700, "subtitle": 600, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 56, "subtitle": 36, "body": 26, "caption": 18 }
+  },
+  "motion": {
+    "style": "professional-steady",
+    "easing": "power2.out",
+    "stagger": 0.05,
+    "intensity": "medium",
+    "duration": "normal",
+    "rhythm": "steady"
+  },
+  "contextMatch": {
+    "mood": ["professional", "trustworthy", "clean", "authoritative"],
+    "industry": ["corporate", "finance", "consulting", "enterprise", "legal", "healthcare"],
+    "platform": ["youtube", "bilibili", "instagram"]
+  },
+  "sourceRefs": {
+    "paletteId": "corporate-navy",
+    "typographyId": "modern-sans",
+    "motionStyleId": "professional-steady"
+  }
+}

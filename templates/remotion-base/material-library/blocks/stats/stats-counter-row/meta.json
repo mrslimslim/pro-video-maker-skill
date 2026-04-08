@@ -1,0 +1,31 @@
+{
+  "id": "stats-counter-row",
+  "name": "Stats — Counter Row",
+  "version": "1.0.0",
+  "type": "block",
+  "category": "stats",
+  "tags": ["stats", "kpi", "counter", "tabular", "metrics", "row"],
+  "description": "Evenly spaced stat columns: values count up together via Remotion interpolate (tabular numerals), labels spring in with stagger after the count, optional upward trend arrow bounces in.",
+  "contextMatch": {
+    "mood": ["confident", "data-driven", "professional", "bold"],
+    "industry": ["saas", "finance", "analytics", "marketing", "operations"],
+    "platform": ["youtube", "bilibili", "linkedin", "instagram"],
+    "contentType": ["metrics", "reports", "pitch", "social-proof"]
+  },
+  "props": {
+    "stats": { "type": "array", "required": true },
+    "backgroundColor": { "type": "color", "default": "#020617" },
+    "textColor": { "type": "color", "default": "#F8FAFC" },
+    "accentColor": { "type": "color", "default": "#34D399" },
+    "fontFamily": { "type": "string", "default": "Inter" },
+    "showTrendArrow": { "type": "boolean", "default": false }
+  },
+  "duration": { "minFrames": 120, "maxFrames": 300, "defaultFrames": 180 },
+  "component": "./Component.tsx",
+  "schemaFile": "./schema.ts",
+  "dependencies": [],
+  "compatibleStyles": ["minimal-motion", "cinematic", "editorial"],
+  "compatibleTransitions": ["fade", "dissolve", "crossfade"],
+  "createdAt": "2026-04-06",
+  "source": "library-upgrade"
+}

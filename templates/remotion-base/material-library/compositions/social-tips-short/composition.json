@@ -1,0 +1,46 @@
+{
+  "id": "social-tips-short",
+  "style": "tech-dark-energetic",
+  "sequence": [
+    {
+      "block": "title-spring-basic",
+      "role": "hook",
+      "durationFrames": 90,
+      "props": {
+        "title": "{{hookTitle}}",
+        "subtitle": null
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "content-bullet-stagger",
+      "role": "tip",
+      "repeat": "{{tipCount}}",
+      "durationFrames": 150,
+      "props": {
+        "heading": "{{tips[i].title}}",
+        "body": "{{tips[i].body}}",
+        "layout": "left-aligned"
+      },
+      "transition": "slide-up"
+    },
+    {
+      "block": "cta-bounce",
+      "role": "closing",
+      "durationFrames": 90,
+      "props": {
+        "headline": "{{ctaText}}",
+        "buttonText": "{{ctaButton}}"
+      },
+      "transition": "fade"
+    }
+  ],
+  "variables": {
+    "hookTitle": { "type": "string", "description": "Hook/title text for the opening scene" },
+    "tipCount": { "type": "number", "description": "Number of tips (auto-generates repeated tip blocks)", "default": 5 },
+    "tips": { "type": "array", "description": "Array of {title, body} objects for each tip" },
+    "ctaText": { "type": "string", "description": "Call-to-action headline", "default": "Follow for more!" },
+    "ctaButton": { "type": "string", "description": "Button text (optional)", "default": null }
+  },
+  "notes": "Adjust tipCount and durationFrames per tip to fit target duration. For 30s at 30fps = 900 frames total. Hook 90 + tips*150 + CTA 90 = adjust tip duration as needed."
+}

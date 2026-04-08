@@ -1,0 +1,39 @@
+{
+  "id": "brand-warm-cinematic",
+  "name": "品牌暖色电影风",
+  "description": "Warm cinematic look with slow, dramatic motion and editorial serif typography. Best for brand storytelling, luxury products, food, and documentary-style content.",
+  "palette": {
+    "primary": "#D97706",
+    "secondary": "#B45309",
+    "accent": "#059669",
+    "background": "#FFFBEB",
+    "surface": "#FEF3C7",
+    "text": "#1C1917",
+    "textSecondary": "#78716C"
+  },
+  "typography": {
+    "heading": "Playfair Display",
+    "body": "Source Sans 3",
+    "mono": "JetBrains Mono",
+    "weights": { "title": 700, "subtitle": 400, "body": 400, "caption": 400 },
+    "sizes1080p": { "title": 72, "subtitle": 36, "body": 26, "caption": 18 }
+  },
+  "motion": {
+    "style": "cinematic",
+    "easing": "power3.inOut",
+    "stagger": 0.15,
+    "intensity": "moderate",
+    "duration": "slow",
+    "rhythm": "slow"
+  },
+  "contextMatch": {
+    "mood": ["dramatic", "warm", "emotional", "elegant"],
+    "industry": ["food", "restaurant", "luxury", "fashion", "travel", "storytelling"],
+    "platform": ["youtube", "bilibili", "instagram"]
+  },
+  "sourceRefs": {
+    "paletteId": "warm-earth",
+    "typographyId": "editorial-serif",
+    "motionStyleId": "cinematic"
+  }
+}
